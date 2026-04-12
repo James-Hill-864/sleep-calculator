@@ -6,6 +6,7 @@ const LINKS = [
   { to: '/sleep-tips', label: 'Tips' },
   { to: '/best-mattresses', label: 'Mattresses' },
   { to: '/shift-worker-sleep-calculator', label: 'Shift Work' },
+  { to: '/blog', label: 'Blog' },
 ]
 
 export default function Nav() {
