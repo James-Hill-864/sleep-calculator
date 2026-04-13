@@ -10,6 +10,7 @@ const TIPS = [
   {
     title: 'Drop your room temperature to 65–68°F',
     body: 'Your core body temperature needs to fall by roughly 1°C to trigger sleep onset. A warm room fights this process. Sleep researchers at the University of South Australia found that thermoregulation is one of the strongest predictors of how quickly you fall asleep. Set your thermostat to 65–68°F (18–20°C). If that feels cold, use a breathable blanket rather than heating the room — the cool air on your face is part of the signal.',
+    affiliate: { href: 'https://amzn.to/4mstkhp', label: 'Dreo Tower Fan for Bedroom (Amazon) →' },
   },
   {
     title: 'Cut all screens 45–60 minutes before bed',
