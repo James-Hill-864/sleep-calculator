@@ -1,6 +1,15 @@
 import { formatTime } from '../utils/sleepMath'
 
+const CYCLE_DESCRIPTIONS = {
+  6: 'Full recovery — maximum REM for memory, mood, and creativity',
+  5: 'Optimal — complete physical repair and full cognitive maintenance',
+  4: 'Functional — physical recovery met, some REM deficit',
+  3: 'Minimal — basic repair only, significant cognitive and emotional impact',
+}
+
 export default function SleepResult({ time, cycles, totalHours, recommended }) {
+  const description = CYCLE_DESCRIPTIONS[cycles] || 'Emergency only — not sustainable beyond one night'
+
   return (
     <div
       className={`relative rounded-2xl p-5 transition-all duration-300 ${
@@ -26,6 +35,9 @@ export default function SleepResult({ time, cycles, totalHours, recommended }) {
           </div>
           <div className="mt-1 text-xs text-sleep-muted">
             {totalHours} hours of sleep
+          </div>
+          <div className="mt-1 text-[11px] text-sleep-faint leading-relaxed">
+            {description}
           </div>
         </div>
 
