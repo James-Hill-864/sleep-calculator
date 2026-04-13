@@ -10,10 +10,12 @@ const TIPS = [
   {
     title: 'Drop your room temperature to 65–68°F',
     body: 'Your core body temperature needs to fall by roughly 1°C to trigger sleep onset. A warm room fights this process. Sleep researchers at the University of South Australia found that thermoregulation is one of the strongest predictors of how quickly you fall asleep. Set your thermostat to 65–68°F (18–20°C). If that feels cold, use a breathable blanket rather than heating the room — the cool air on your face is part of the signal.',
+    affiliate: { href: 'https://amzn.to/4e1Zbnd', label: 'LectroFan White Noise Machine (Amazon) →' },
   },
   {
     title: 'Cut all screens 45–60 minutes before bed',
     body: 'Blue light from phones and laptops suppresses melatonin production by up to 50%, according to research from Harvard Medical School. But the light is only half the problem — scrolling social media or reading email keeps your prefrontal cortex in problem-solving mode. Switch to a physical book, dim the overhead lights, and let your brain receive the neurochemical signal that the day is over.',
+    affiliate: { href: 'https://amzn.to/4t1F5Ok', label: 'Top-rated Sleep Mask (Amazon) →' },
   },
   {
     title: 'Set a hard caffeine cutoff at 2 PM',
@@ -33,6 +35,7 @@ const TIPS_2 = [
   {
     title: 'Use your bed for sleep only',
     body: 'Stimulus control is one of the most effective cognitive behavioral interventions for insomnia. If your brain associates the bed with working, watching TV, or doomscrolling, it takes longer to shift into sleep mode when you finally want to. Work at a desk. Watch TV on the couch. The bed is for sleep. If you can\'t fall asleep within 20 minutes, get up and do something quiet in another room until you feel drowsy, then return.',
+    affiliate: { href: 'https://amzn.to/4dIURsS', label: 'Marpac Dohm White Noise Machine (Amazon) →' },
   },
 ]
 
@@ -54,6 +57,9 @@ export default function SleepTips() {
             <p className="text-base text-sleep-muted leading-relaxed">
               Most sleep advice is vague — &ldquo;relax more,&rdquo; &ldquo;reduce stress.&rdquo; These seven strategies are specific, evidence-based, and actionable tonight. No supplements, no gadgets, no meditation apps.
             </p>
+            <p className="text-xs text-sleep-faint mt-4">
+              This page contains affiliate links. We may earn a small commission at no extra cost to you.
+            </p>
           </header>
 
           <div className="space-y-6">
@@ -66,6 +72,11 @@ export default function SleepTips() {
                   <div>
                     <h2 className="text-base font-bold text-sleep-text mb-2">{tip.title}</h2>
                     <p className="text-sm text-sleep-muted leading-relaxed">{tip.body}</p>
+                    {tip.affiliate && (
+                      <a href={tip.affiliate.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-sleep-accent hover:underline mt-2">
+                        {tip.affiliate.label}
+                      </a>
+                    )}
                   </div>
                 </div>
               </section>
@@ -87,6 +98,11 @@ export default function SleepTips() {
                   <div>
                     <h2 className="text-base font-bold text-sleep-text mb-2">{tip.title}</h2>
                     <p className="text-sm text-sleep-muted leading-relaxed">{tip.body}</p>
+                    {tip.affiliate && (
+                      <a href={tip.affiliate.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-sleep-accent hover:underline mt-2">
+                        {tip.affiliate.label}
+                      </a>
+                    )}
                   </div>
                 </div>
               </section>
@@ -109,6 +125,14 @@ export default function SleepTips() {
               >
                 See our mattress picks ranked by sleep cycle support &rarr;
               </Link>
+              <div className="mt-3 space-y-1">
+                <a href="https://amzn.to/4cn4smP" target="_blank" rel="noopener noreferrer" className="block text-xs text-sleep-accent hover:underline">
+                  Blackout Curtains (Amazon) &rarr;
+                </a>
+                <a href="https://amzn.to/4ckKxoe" target="_blank" rel="noopener noreferrer" className="block text-xs text-sleep-accent hover:underline">
+                  Magnesium Glycinate for Sleep (Amazon) &rarr;
+                </a>
+              </div>
             </div>
           </section>
 
