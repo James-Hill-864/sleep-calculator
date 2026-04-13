@@ -6,6 +6,7 @@ const TIPS = [
   {
     title: 'Lock in the same wake time — every single day',
     body: 'Your circadian rhythm anchors to your wake time, not your bedtime. Sleeping in on weekends shifts your internal clock by up to two hours, creating a phenomenon researchers call social jet lag. The result is that Monday and Tuesday feel like you flew across time zones. Pick a wake time, keep it within a 30-minute window seven days a week, and your body will start getting drowsy at the right time on its own.',
+    affiliate: { href: 'https://amzn.to/4mnWmip', label: 'Hatch Restore 3 Sunrise Alarm Clock (Amazon) →' },
   },
   {
     title: 'Drop your room temperature to 65–68°F',
