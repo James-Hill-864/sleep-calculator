@@ -123,7 +123,7 @@ export default function About() {
               </div>
 
               <p className="mt-4">
-                These are targets, not minimums. Four complete cycles (6 hours) is survivable but not sustainable. Three cycles (4.5 hours) produces measurable cognitive impairment within 48 hours. Six cycles (9 hours) is ideal for teenagers and for adults recovering from sleep debt.
+                These are targets, not minimums. Four complete cycles (6 hours) is survivable but not sustainable. Three cycles (4.5 hours) produces measurable cognitive impairment within 48 hours. Six cycles (9 hours) is ideal for teenagers and for adults recovering from sleep debt. For a deeper breakdown of what each cycle count provides, see our <Link to="/blog/how-many-sleep-cycles-do-you-need" className="text-sleep-accent hover:underline">guide to sleep cycles by age</Link>.
               </p>
             </section>
 

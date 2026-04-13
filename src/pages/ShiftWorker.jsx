@@ -52,7 +52,7 @@ export default function ShiftWorker() {
                 For shift workers, this compounds fast. A nurse losing one cycle per shift (90 minutes) over five consecutive shifts accumulates 7.5 hours of sleep debt in a single work week. That&apos;s an entire night of lost sleep, manifesting as slower response times, impaired judgment, and increased error rates — precisely the conditions where those faculties matter most.
               </p>
               <p className="mt-3">
-                The calculator above can&apos;t eliminate sleep debt, but it minimizes waste. By aligning your limited sleep window with complete 90-minute cycles, you extract maximum restorative value from every hour you get.
+                The calculator above can&apos;t eliminate sleep debt, but it minimizes waste. By aligning your limited sleep window with complete 90-minute cycles, you extract maximum restorative value from every hour you get. For guidance on how many cycles you actually need, see our <Link to="/blog/how-many-sleep-cycles-do-you-need" className="text-sleep-accent hover:underline">cycle count guide by age</Link>.
               </p>
             </section>
 
@@ -120,6 +120,14 @@ export default function ShiftWorker() {
             >
               <h3 className="text-sm font-bold text-sleep-text mb-1">Best mattresses for temperature regulation</h3>
               <p className="text-xs text-sleep-muted">Critical for daytime sleep when your room runs warm &rarr;</p>
+            </Link>
+
+            <Link
+              to="/"
+              className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors"
+            >
+              <h3 className="text-sm font-bold text-sleep-text mb-1">Sleep Cycle Calculator</h3>
+              <p className="text-xs text-sleep-muted">Find your ideal bedtime for any wake-up time &rarr;</p>
             </Link>
           </div>
         </article>

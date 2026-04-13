@@ -165,6 +165,19 @@ export default function HowManyCycles() {
               </p>
             </section>
 
+            {/* Related */}
+            <div className="space-y-4 mt-4">
+              <Link to="/blog/best-time-to-wake-up-for-deep-sleep" className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors">
+                <h3 className="text-sm font-bold text-sleep-text mb-1">The best time to wake up for deep sleep</h3>
+                <p className="text-xs text-sleep-muted">Why it&apos;s not about hours — it&apos;s about where in the cycle you wake &rarr;</p>
+              </Link>
+
+              <Link to="/blog/sleep-deprivation-effects-one-night" className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors">
+                <h3 className="text-sm font-bold text-sleep-text mb-1">What one bad night does to your body</h3>
+                <p className="text-xs text-sleep-muted">The cognitive, physical, and emotional effects — backed by research &rarr;</p>
+              </Link>
+            </div>
+
             {/* CTA */}
             <div className="rounded-2xl bg-sleep-surface border border-sleep-border p-6 mt-4">
               <h2 className="text-sm font-bold text-sleep-text mb-2">Calculate your cycle-aligned bedtime</h2>

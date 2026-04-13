@@ -126,6 +126,9 @@ export default function SleepTips() {
               >
                 See our mattress picks ranked by sleep cycle support &rarr;
               </Link>
+              <p className="mt-3">
+                To understand <em>why</em> these habits work, read our <Link to="/about" className="text-sleep-accent hover:underline">guide to sleep cycle stages</Link> — knowing the biology makes the habits easier to stick with.
+              </p>
               <div className="mt-3 space-y-1">
                 <a href="https://amzn.to/4cn4smP" target="_blank" rel="noopener noreferrer" className="block text-xs text-sleep-accent hover:underline">
                   Blackout Curtains (Amazon) &rarr;

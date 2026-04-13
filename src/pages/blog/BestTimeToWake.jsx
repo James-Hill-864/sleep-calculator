@@ -152,7 +152,7 @@ export default function BestTimeToWake() {
                 </li>
               </ul>
               <p className="mt-4">
-                For the pre-bed routine that makes step 3 easier, see our <Link to="/about" className="text-sleep-accent hover:underline">guide to sleep cycle science</Link>.
+                For the pre-bed routine that makes step 3 easier, see our <Link to="/about" className="text-sleep-accent hover:underline">guide to sleep cycle science</Link>. And for actionable habits that reduce your fall-asleep time, check our <Link to="/sleep-tips" className="text-sleep-accent hover:underline">7 evidence-based sleep tips</Link>.
               </p>
             </section>
 

@@ -109,7 +109,7 @@ export default function WakeUp6am() {
                 </li>
               </ul>
               <p className="mt-3">
-                The &ldquo;in bed by&rdquo; times are what you see in the table above. The 15-minute buffer is added back so you know when to physically get into bed, not when you need to be asleep. If you tend to fall asleep faster or slower than average, adjust the buffer — but 15 minutes is the clinical midpoint that works for most people.
+                The &ldquo;in bed by&rdquo; times are what you see in the table above. The 15-minute buffer is added back so you know when to physically get into bed, not when you need to be asleep. If you tend to fall asleep faster or slower than average, adjust the buffer — but 15 minutes is the clinical midpoint that works for most people. Not sure whether you need 5 or 6 cycles? Our <Link to="/blog/how-many-sleep-cycles-do-you-need" className="text-sleep-accent hover:underline">guide to cycle counts by age</Link> breaks it down.
               </p>
             </section>
 
@@ -148,6 +148,19 @@ export default function WakeUp6am() {
                 The fix is unglamorous: keep your 6:00 AM wake time on weekends, or limit the shift to 30 minutes. If you need more sleep on weekends, go to bed earlier (hit six cycles instead of five) rather than sleeping later. Your circadian rhythm anchors to your wake time, not your bedtime — protecting it is the single highest-leverage sleep habit you can build.
               </p>
             </section>
+
+            {/* Related */}
+            <div className="space-y-4 mt-4">
+              <Link to="/blog/what-time-to-sleep-wake-up-7am" className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors">
+                <h3 className="text-sm font-bold text-sleep-text mb-1">What time should I go to bed if I wake up at 7am?</h3>
+                <p className="text-xs text-sleep-muted">The same cycle math, shifted one hour later &rarr;</p>
+              </Link>
+
+              <Link to="/" className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors">
+                <h3 className="text-sm font-bold text-sleep-text mb-1">Sleep Cycle Calculator</h3>
+                <p className="text-xs text-sleep-muted">Calculate bedtimes for any wake-up time &rarr;</p>
+              </Link>
+            </div>
 
             {/* CTA */}
             <div className="rounded-2xl bg-sleep-surface border border-sleep-border p-6 mt-4">

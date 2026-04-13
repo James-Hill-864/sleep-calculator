@@ -48,6 +48,10 @@ export default function BlogIndex() {
           </p>
         </header>
 
+        <p className="text-sm text-sleep-muted mb-6">
+          Need a quick answer? Use the <Link to="/" className="text-sleep-accent hover:underline">sleep calculator</Link> to find your ideal bedtime or wake time right now.
+        </p>
+
         <div className="space-y-4">
           {POSTS.map(post => (
             <Link

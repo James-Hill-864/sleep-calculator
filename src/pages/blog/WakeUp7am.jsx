@@ -159,6 +159,19 @@ export default function WakeUp7am() {
               </ul>
             </section>
 
+            {/* Related */}
+            <div className="space-y-4 mt-4">
+              <Link to="/blog/what-time-to-go-to-bed-wake-up-6am" className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors">
+                <h3 className="text-sm font-bold text-sleep-text mb-1">What time should I go to bed if I wake up at 6am?</h3>
+                <p className="text-xs text-sleep-muted">The same cycle math for an earlier alarm &rarr;</p>
+              </Link>
+
+              <Link to="/" className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors">
+                <h3 className="text-sm font-bold text-sleep-text mb-1">Sleep Cycle Calculator</h3>
+                <p className="text-xs text-sleep-muted">Calculate bedtimes for any wake-up time &rarr;</p>
+              </Link>
+            </div>
+
             {/* CTA */}
             <div className="rounded-2xl bg-sleep-surface border border-sleep-border p-6 mt-4">
               <h2 className="text-sm font-bold text-sleep-text mb-2">If it takes you more than 20 minutes to fall asleep</h2>

@@ -60,6 +60,14 @@ export default function Home() {
           {/* Sidebar */}
           <aside className="hidden lg:flex flex-col gap-6">
             <div className="rounded-2xl bg-sleep-card border border-sleep-border p-5">
+              <h3 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">Explore</h3>
+              <div className="space-y-2">
+                <Link to="/sleep-tips" className="block text-sm text-sleep-accent hover:underline">7 tips to fall asleep faster &rarr;</Link>
+                <Link to="/best-mattresses" className="block text-sm text-sleep-accent hover:underline">Best mattresses for deep sleep &rarr;</Link>
+                <Link to="/blog" className="block text-sm text-sleep-accent hover:underline">Sleep science blog &rarr;</Link>
+              </div>
+            </div>
+            <div className="rounded-2xl bg-sleep-card border border-sleep-border p-5">
               <h3 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">Quick Facts</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">

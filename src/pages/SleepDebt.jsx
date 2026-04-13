@@ -295,7 +295,7 @@ export default function SleepDebt() {
               Recovering from sleep debt is always harder than preventing it. Each recovery night adds roughly 1.5 hours of extra effective sleep (the difference between 5 cycles and 6 cycles). That means 10 hours of debt takes approximately 7 recovery nights to fully resolve — an entire week of going to bed 90 minutes early. Compare that to preventing the debt in the first place by consistently hitting your cycle-aligned bedtime each night.
             </p>
             <p className="mt-3">
-              The calculator above is designed to make the math visible. When you can see your debt as a concrete number — not an abstract feeling of tiredness — it becomes easier to make the trade-off between one more episode of television and the cumulative cost of another short night.
+              The calculator above is designed to make the math visible. When you can see your debt as a concrete number — not an abstract feeling of tiredness — it becomes easier to make the trade-off between one more episode of television and the cumulative cost of another short night. For practical strategies to fall asleep faster and protect your cycle-aligned bedtime, see our <Link to="/sleep-tips" className="text-sleep-accent hover:underline">7 evidence-based sleep tips</Link>.
             </p>
           </section>
         </article>

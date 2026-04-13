@@ -159,6 +159,19 @@ export default function SleepDeprivation() {
               </p>
             </section>
 
+            {/* Related */}
+            <div className="space-y-4 mt-4">
+              <Link to="/blog/how-many-sleep-cycles-do-you-need" className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors">
+                <h3 className="text-sm font-bold text-sleep-text mb-1">How many sleep cycles do you need?</h3>
+                <p className="text-xs text-sleep-muted">The difference between 4, 5, and 6 cycles — by age &rarr;</p>
+              </Link>
+
+              <Link to="/" className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors">
+                <h3 className="text-sm font-bold text-sleep-text mb-1">Sleep Cycle Calculator</h3>
+                <p className="text-xs text-sleep-muted">Find your ideal recovery bedtime tonight &rarr;</p>
+              </Link>
+            </div>
+
             {/* CTA */}
             <div className="rounded-2xl bg-sleep-surface border border-sleep-border p-6 mt-4">
               <h2 className="text-sm font-bold text-sleep-text mb-2">A bad mattress can turn one bad night into a pattern</h2>

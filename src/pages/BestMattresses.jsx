@@ -137,6 +137,14 @@ export default function BestMattresses() {
               <h3 className="text-sm font-bold text-sleep-text mb-1">7 ways to fall asleep faster</h3>
               <p className="text-xs text-sleep-muted">Optimize your routine to match your new mattress &rarr;</p>
             </Link>
+
+            <Link
+              to="/blog/sleep-deprivation-effects-one-night"
+              className="block rounded-2xl bg-sleep-surface border border-sleep-border p-5 hover:border-sleep-faint/20 transition-colors"
+            >
+              <h3 className="text-sm font-bold text-sleep-text mb-1">What one bad night does to your body</h3>
+              <p className="text-xs text-sleep-muted">The cognitive, physical, and emotional effects — backed by research &rarr;</p>
+            </Link>
           </div>
         </article>
       </main>
