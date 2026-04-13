@@ -7,6 +7,7 @@ import About from './pages/About'
 import SleepTips from './pages/SleepTips'
 import BestMattresses from './pages/BestMattresses'
 import ShiftWorker from './pages/ShiftWorker'
+import SleepDebt from './pages/SleepDebt'
 import BlogIndex from './pages/blog/BlogIndex'
 import WakeUp6am from './pages/blog/WakeUp6am'
 import WakeUp7am from './pages/blog/WakeUp7am'
@@ -26,6 +27,7 @@ export default function App() {
             <Route path="/sleep-tips" element={<SleepTips />} />
             <Route path="/best-mattresses" element={<BestMattresses />} />
             <Route path="/shift-worker-sleep-calculator" element={<ShiftWorker />} />
+            <Route path="/sleep-debt-calculator" element={<SleepDebt />} />
             <Route path="/blog" element={<BlogIndex />} />
             <Route path="/blog/what-time-to-go-to-bed-wake-up-6am" element={<WakeUp6am />} />
             <Route path="/blog/what-time-to-sleep-wake-up-7am" element={<WakeUp7am />} />
