@@ -10,7 +10,6 @@ const TIPS = [
   {
     title: 'Drop your room temperature to 65–68°F',
     body: 'Your core body temperature needs to fall by roughly 1°C to trigger sleep onset. A warm room fights this process. Sleep researchers at the University of South Australia found that thermoregulation is one of the strongest predictors of how quickly you fall asleep. Set your thermostat to 65–68°F (18–20°C). If that feels cold, use a breathable blanket rather than heating the room — the cool air on your face is part of the signal.',
-    affiliate: { href: 'https://amzn.to/4e1Zbnd', label: 'LectroFan White Noise Machine (Amazon) →' },
   },
   {
     title: 'Cut all screens 45–60 minutes before bed',
@@ -35,7 +34,10 @@ const TIPS_2 = [
   {
     title: 'Use your bed for sleep only',
     body: 'Stimulus control is one of the most effective cognitive behavioral interventions for insomnia. If your brain associates the bed with working, watching TV, or doomscrolling, it takes longer to shift into sleep mode when you finally want to. Work at a desk. Watch TV on the couch. The bed is for sleep. If you can\'t fall asleep within 20 minutes, get up and do something quiet in another room until you feel drowsy, then return.',
-    affiliate: { href: 'https://amzn.to/4dIURsS', label: 'Marpac Dohm White Noise Machine (Amazon) →' },
+    affiliate: [
+      { href: 'https://amzn.to/4dIURsS', label: 'Marpac Dohm White Noise Machine (Amazon) →' },
+      { href: 'https://amzn.to/4e1Zbnd', label: 'LectroFan White Noise Machine (Amazon) →' },
+    ],
   },
 ]
 
@@ -100,9 +102,15 @@ export default function SleepTips() {
                     <h2 className="text-base font-bold text-sleep-text mb-2">{tip.title}</h2>
                     <p className="text-sm text-sleep-muted leading-relaxed">{tip.body}</p>
                     {tip.affiliate && (
-                      <a href={tip.affiliate.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-sleep-accent hover:underline mt-2">
-                        {tip.affiliate.label}
-                      </a>
+                      Array.isArray(tip.affiliate)
+                        ? tip.affiliate.map((a, j) => (
+                          <a key={j} href={a.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-sleep-accent hover:underline mt-2 mr-4">
+                            {a.label}
+                          </a>
+                        ))
+                        : <a href={tip.affiliate.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-sleep-accent hover:underline mt-2">
+                            {tip.affiliate.label}
+                          </a>
                     )}
                   </div>
                 </div>
