@@ -70,7 +70,7 @@ export default function SleepDebt() {
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
-        <header className="mb-10">
+        <header className="mb-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sleep-accent-dim border border-sleep-accent/15 mb-6">
             <span className="text-[10px] font-bold text-sleep-accent uppercase tracking-widest">New Tool</span>
           </div>
@@ -83,7 +83,7 @@ export default function SleepDebt() {
         </header>
 
         {/* Calculator Form */}
-        <section className="space-y-6 mb-10">
+        <section className="space-y-6 mb-4">
           {/* Age group */}
           <div>
             <label className="block text-[10px] font-bold text-sleep-faint uppercase tracking-widest mb-2">
