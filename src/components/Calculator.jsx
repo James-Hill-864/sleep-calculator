@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { calculateBedtimes, calculateWakeTimes, parseTimeInput } from '../utils/sleepMath'
+import { calculateBedtimes, calculateWakeTimes, parseTimeInput, formatTime } from '../utils/sleepMath'
 import SleepResult from './SleepResult'
 
 const MODES = [
@@ -14,12 +14,25 @@ const AGE_GROUPS = [
   { id: 'senior', label: 'Senior', sub: '65+' },
 ]
 
+function getCurrentTimeString() {
+  const now = new Date()
+  return `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`
+}
+
 export default function Calculator() {
   const [mode, setMode] = useState('wake')
   const [timeValue, setTimeValue] = useState('06:30')
   const [ageGroup, setAgeGroup] = useState('adult')
   const [results, setResults] = useState(null)
   const [isCalculating, setIsCalculating] = useState(false)
+  const [currentTime, setCurrentTime] = useState(getCurrentTimeString)
+  const [sleepNowPulsed, setSleepNowPulsed] = useState(false)
+
+  // Update displayed current time every 60 seconds
+  useEffect(() => {
+    const iv = setInterval(() => setCurrentTime(getCurrentTimeString()), 60000)
+    return () => clearInterval(iv)
+  }, [])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -34,6 +47,23 @@ export default function Calculator() {
       setIsCalculating(false)
     }, 300)
   }
+
+  const handleSleepNow = () => {
+    const now = new Date()
+    const hour = now.getHours()
+    const minute = now.getMinutes()
+    const nowStr = `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`
+
+    setMode('bed')
+    setTimeValue(nowStr)
+    setResults(calculateWakeTimes(hour, minute, ageGroup))
+
+    setSleepNowPulsed(true)
+    setTimeout(() => setSleepNowPulsed(false), 400)
+  }
+
+  const { hour: displayHour, minute: displayMinute } = parseTimeInput(currentTime)
+  const displayTimeFormatted = formatTime({ hour: displayHour, minute: displayMinute })
 
   return (
     <div>
@@ -55,6 +85,28 @@ export default function Calculator() {
             </button>
           ))}
         </div>
+
+        {/* Sleep Now button */}
+        <button
+          type="button"
+          onClick={handleSleepNow}
+          className={`w-full flex items-center justify-between px-4 py-3 rounded-xl border text-sm transition-all ${
+            sleepNowPulsed
+              ? 'border-sleep-accent/60 bg-sleep-accent/10 scale-[0.98]'
+              : 'border-sleep-accent/30 bg-transparent hover:border-sleep-accent/50 hover:bg-sleep-accent-dim'
+          }`}
+        >
+          <span className="flex items-center gap-2 text-sleep-accent font-medium">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sleep-accent opacity-40"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-sleep-accent"></span>
+            </span>
+            Sleep now
+          </span>
+          <span className="text-sleep-muted font-mono text-xs">
+            {displayTimeFormatted}
+          </span>
+        </button>
 
         {/* Time input */}
         <div>
