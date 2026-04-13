@@ -66,6 +66,7 @@ export default function SleepDebt() {
         <title>Sleep Debt Calculator — How Much Sleep Do You Owe Your Body? — SleepCycler</title>
         <meta name="description" content="Calculate your sleep debt from the last 7 nights and get a recovery plan with cycle-aligned bedtimes." />
         <link rel="canonical" href="https://sleepcycler.com/sleep-debt-calculator" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Sleep Debt Calculator","url":"https://sleepcycler.com/sleep-debt-calculator","description":"Calculate your sleep debt from the last 7 nights and get a personalized recovery plan.","applicationCategory":"HealthApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

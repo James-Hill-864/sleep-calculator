@@ -9,6 +9,7 @@ export default function WakeUp6am() {
         <title>What Time Should I Go to Bed If I Wake Up at 6am? — SleepCycler</title>
         <meta name="description" content="Go to bed at 8:45 PM, 10:15 PM, or 11:45 PM to wake up at 6am feeling rested. Full sleep cycle breakdown inside." />
         <link rel="canonical" href="https://sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-6am" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What Time Should I Go to Bed If I Wake Up at 6am?","description":"Go to bed at 8:45 PM, 10:15 PM, or 11:45 PM to wake up at 6am feeling rested. Full sleep cycle breakdown.","url":"https://sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-6am","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://sleepcycler.com"}})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

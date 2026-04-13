@@ -46,6 +46,7 @@ export default function SleepTips() {
         <title>How to Fall Asleep Faster — 7 Science-Backed Tips — SleepCycler</title>
         <meta name="description" content="Fall asleep faster tonight with 7 evidence-based sleep tips. Covers temperature, screens, caffeine, routines, and exercise timing." />
         <link rel="canonical" href="https://sleepcycler.com/sleep-tips" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What temperature should I sleep at?","acceptedAnswer":{"@type":"Answer","text":"The optimal sleep temperature is 65-68°F (18-20°C). Your core body temperature needs to drop by approximately 1°C to initiate sleep onset. A cool room supports this process."}},{"@type":"Question","name":"How long before bed should I stop using screens?","acceptedAnswer":{"@type":"Answer","text":"Stop using screens 45-60 minutes before bed. Blue light from phones and laptops suppresses melatonin production by up to 50%, delaying sleep onset."}},{"@type":"Question","name":"What time should I stop drinking caffeine?","acceptedAnswer":{"@type":"Answer","text":"Set a hard caffeine cutoff at 2 PM. Caffeine has a half-life of 5-7 hours, meaning a 3 PM coffee still has half its caffeine in your system at 9 PM, reducing deep sleep quality."}}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

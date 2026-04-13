@@ -9,6 +9,7 @@ export default function BestTimeToWake() {
         <title>Best Time to Wake Up for Deep Sleep — SleepCycler</title>
         <meta name="description" content="The best time to wake up isn't about total hours — it's about where in your sleep cycle the alarm fires. Here's how to find it." />
         <link rel="canonical" href="https://sleepcycler.com/blog/best-time-to-wake-up-for-deep-sleep" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Best Time to Wake Up for Deep Sleep (And Why It's Not About Hours)","description":"The best time to wake up is whenever a complete sleep cycle ends. Here is how to find yours.","url":"https://sleepcycler.com/blog/best-time-to-wake-up-for-deep-sleep","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://sleepcycler.com"}})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

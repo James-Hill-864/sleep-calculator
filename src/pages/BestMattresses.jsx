@@ -48,6 +48,7 @@ export default function BestMattresses() {
         <title>Best Mattresses for Deep Sleep (Ranked by Sleep Cycle Support) — SleepCycler</title>
         <meta name="description" content="5 mattresses ranked for deep sleep quality. Reviewed for temperature control, motion isolation, and sleep cycle support." />
         <link rel="canonical" href="https://sleepcycler.com/best-mattresses" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Mattresses for Deep Sleep","description":"Top mattresses ranked for temperature regulation, motion isolation, and sleep cycle support.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Nectar Sleep","url":"https://sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":2,"name":"Brooklyn Bedding Signature Hybrid","url":"https://sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":3,"name":"Casper Original","url":"https://sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":4,"name":"Saatva Classic","url":"https://sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":5,"name":"Purple Original","url":"https://sleepcycler.com/best-mattresses"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
