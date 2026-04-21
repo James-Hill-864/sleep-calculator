@@ -50,6 +50,15 @@ export default function SleepTips() {
         <title>How to Fall Asleep Faster — 7 Science-Backed Tips — SleepCycler</title>
         <meta name="description" content="Fall asleep faster tonight with 7 evidence-based sleep tips. Covers temperature, screens, caffeine, routines, and exercise timing." />
         <link rel="canonical" href="https://www.sleepcycler.com/sleep-tips" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="How to Fall Asleep Faster — 7 Science-Backed Tips" />
+        <meta property="og:description" content="Fall asleep faster tonight with 7 evidence-based sleep tips. Temperature, screens, caffeine, routines, and exercise timing." />
+        <meta property="og:url" content="https://www.sleepcycler.com/sleep-tips" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="How to Fall Asleep Faster — 7 Science-Backed Tips" />
+        <meta name="twitter:description" content="Fall asleep faster tonight with 7 evidence-based sleep tips. Temperature, screens, caffeine, routines, and exercise timing." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What temperature should I sleep at?","acceptedAnswer":{"@type":"Answer","text":"The optimal sleep temperature is 65-68°F (18-20°C). Your core body temperature needs to drop by approximately 1°C to initiate sleep onset. A cool room supports this process."}},{"@type":"Question","name":"How long before bed should I stop using screens?","acceptedAnswer":{"@type":"Answer","text":"Stop using screens 45-60 minutes before bed. Blue light from phones and laptops suppresses melatonin production by up to 50%, delaying sleep onset."}},{"@type":"Question","name":"What time should I stop drinking caffeine?","acceptedAnswer":{"@type":"Answer","text":"Set a hard caffeine cutoff at 2 PM. Caffeine has a half-life of 5-7 hours, meaning a 3 PM coffee still has half its caffeine in your system at 9 PM, reducing deep sleep quality."}}]})}</script>
       </Helmet>
 

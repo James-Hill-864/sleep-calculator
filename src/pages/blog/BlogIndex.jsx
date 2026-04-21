@@ -46,6 +46,15 @@ export default function BlogIndex() {
         <title>Sleep Science Blog — SleepCycler</title>
         <meta name="description" content="Evidence-based articles on sleep cycles, bedtime math, sleep deprivation, and how to wake up feeling rested." />
         <link rel="canonical" href="https://www.sleepcycler.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Sleep Science Blog — SleepCycler" />
+        <meta property="og:description" content="Evidence-based articles on sleep cycles, bedtime math, sleep deprivation, and how to wake up feeling rested." />
+        <meta property="og:url" content="https://www.sleepcycler.com/blog" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sleep Science Blog — SleepCycler" />
+        <meta name="twitter:description" content="Evidence-based articles on sleep cycles, bedtime math, sleep deprivation, and how to wake up feeling rested." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

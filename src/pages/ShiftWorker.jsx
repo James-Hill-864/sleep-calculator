@@ -9,6 +9,15 @@ export default function ShiftWorker() {
         <title>Sleep Calculator for Shift Workers — SleepCycler</title>
         <meta name="description" content="Sleep calculator for shift workers, nurses, and early risers. Find the best bedtime for 4 AM, 5 AM, or any non-standard wake-up." />
         <link rel="canonical" href="https://www.sleepcycler.com/shift-worker-sleep-calculator" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Sleep Calculator for Shift Workers" />
+        <meta property="og:description" content="Sleep calculator for shift workers, nurses, and early risers on non-standard schedules. Find the best bedtime for any wake-up time." />
+        <meta property="og:url" content="https://www.sleepcycler.com/shift-worker-sleep-calculator" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sleep Calculator for Shift Workers" />
+        <meta name="twitter:description" content="Sleep calculator for shift workers, nurses, and early risers on non-standard schedules." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Sleep Calculator for Shift Workers: How to Get Quality Rest on Any Schedule","description":"Sleep calculator for shift workers, nurses, and early risers on non-standard schedules.","url":"https://www.sleepcycler.com/shift-worker-sleep-calculator","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

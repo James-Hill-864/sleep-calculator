@@ -48,6 +48,15 @@ export default function BestMattresses() {
         <title>Best Mattresses for Deep Sleep (Ranked by Sleep Cycle Support) — SleepCycler</title>
         <meta name="description" content="5 mattresses ranked for deep sleep quality. Reviewed for temperature control, motion isolation, and sleep cycle support." />
         <link rel="canonical" href="https://www.sleepcycler.com/best-mattresses" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Best Mattresses for Deep Sleep (Ranked by Sleep Cycle Support)" />
+        <meta property="og:description" content="5 mattresses ranked for deep sleep quality. Reviewed for temperature control, motion isolation, and sleep cycle support." />
+        <meta property="og:url" content="https://www.sleepcycler.com/best-mattresses" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best Mattresses for Deep Sleep (Ranked by Sleep Cycle Support)" />
+        <meta name="twitter:description" content="5 mattresses ranked for deep sleep quality. Reviewed for temperature control, motion isolation, and sleep cycle support." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Mattresses for Deep Sleep","description":"Top mattresses ranked for temperature regulation, motion isolation, and sleep cycle support.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Nectar Sleep","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":2,"name":"Brooklyn Bedding Signature Hybrid","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":3,"name":"Casper Original","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":4,"name":"Saatva Classic","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":5,"name":"Purple Original","url":"https://www.sleepcycler.com/best-mattresses"}]})}</script>
       </Helmet>
 

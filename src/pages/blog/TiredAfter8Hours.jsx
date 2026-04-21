@@ -9,6 +9,15 @@ export default function TiredAfter8Hours() {
         <title>Why Am I Still Tired After 8 Hours of Sleep? — SleepCycler</title>
         <meta name="description" content="Why 8 hours isn't always enough — the science of sleep cycles, mid-cycle waking, and why timing matters more than duration." />
         <link rel="canonical" href="https://www.sleepcycler.com/blog/why-am-i-still-tired-after-8-hours-of-sleep" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Why Am I Still Tired After 8 Hours of Sleep?" />
+        <meta property="og:description" content="Why 8 hours isn't always enough — the science of sleep cycles, mid-cycle waking, and why timing matters more than duration." />
+        <meta property="og:url" content="https://www.sleepcycler.com/blog/why-am-i-still-tired-after-8-hours-of-sleep" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Why Am I Still Tired After 8 Hours of Sleep?" />
+        <meta name="twitter:description" content="Why 8 hours isn't always enough — the science of sleep cycles and why timing matters more than duration." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Am I Still Tired After 8 Hours of Sleep?","description":"The science of why 8 hours of sleep can leave you groggy — and how sleep cycle timing determines how rested you feel.","url":"https://www.sleepcycler.com/blog/why-am-i-still-tired-after-8-hours-of-sleep","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

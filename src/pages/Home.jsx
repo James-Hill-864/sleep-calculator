@@ -8,10 +8,16 @@ export default function Home() {
       <Helmet>
         <title>Sleep Calculator — Find Your Perfect Bedtime | SleepCycler</title>
         <meta name="description" content="Calculate the best time to go to sleep or wake up based on 90-minute sleep cycles. Free, science-backed sleep calculator." />
+        <link rel="canonical" href="https://www.sleepcycler.com/" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Sleep Calculator — Find Your Perfect Bedtime" />
         <meta property="og:description" content="Calculate the best time to go to sleep or wake up based on 90-minute sleep cycles." />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.sleepcycler.com/" />
+        <meta property="og:url" content="https://www.sleepcycler.com/" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sleep Calculator — Find Your Perfect Bedtime" />
+        <meta name="twitter:description" content="Calculate the best time to go to sleep or wake up based on 90-minute sleep cycles." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"SleepCycler Sleep Calculator","url":"https://www.sleepcycler.com","description":"Calculate the best time to sleep or wake up based on 90-minute sleep cycles.","applicationCategory":"HealthApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}</script>
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What time should I go to sleep?","acceptedAnswer":{"@type":"Answer","text":"The best time to go to sleep depends on when you need to wake up. Count backward in 90-minute sleep cycles from your wake time, adding 15 minutes to fall asleep. For a 6:30 AM wake-up, ideal bedtimes are 9:15 PM (6 cycles), 10:45 PM (5 cycles), or 12:15 AM (4 cycles)."}},{"@type":"Question","name":"How many sleep cycles do I need?","acceptedAnswer":{"@type":"Answer","text":"Most adults need 5 complete sleep cycles per night, which equals 7.5 hours of sleep. Teenagers need 6 cycles (9 hours). Each cycle lasts approximately 90 minutes."}},{"@type":"Question","name":"What is a sleep cycle?","acceptedAnswer":{"@type":"Answer","text":"A sleep cycle lasts approximately 90 minutes and consists of 4 stages: N1 (light sleep), N2 (light sleep with memory consolidation), N3 (deep sleep), and REM (dream sleep). Waking at the end of a cycle rather than mid-cycle prevents sleep inertia and grogginess."}},{"@type":"Question","name":"Why do I feel groggy even after 8 hours of sleep?","acceptedAnswer":{"@type":"Answer","text":"Grogginess after 8 hours is usually caused by waking mid-cycle rather than at a cycle boundary. 8 hours doesn't divide evenly into 90-minute cycles. Try 7.5 hours (5 cycles) or 9 hours (6 cycles) instead for a cleaner wake-up."}}]})}</script>
       </Helmet>

@@ -9,6 +9,15 @@ export default function BestTimeToWake() {
         <title>Best Time to Wake Up for Deep Sleep — SleepCycler</title>
         <meta name="description" content="The best time to wake up isn't about total hours — it's about where in your sleep cycle the alarm fires. Here's how to find it." />
         <link rel="canonical" href="https://www.sleepcycler.com/blog/best-time-to-wake-up-for-deep-sleep" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Best Time to Wake Up for Deep Sleep" />
+        <meta property="og:description" content="The best time to wake up isn't about total hours — it's about where in your sleep cycle the alarm fires. Here's how to find it." />
+        <meta property="og:url" content="https://www.sleepcycler.com/blog/best-time-to-wake-up-for-deep-sleep" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best Time to Wake Up for Deep Sleep" />
+        <meta name="twitter:description" content="The best time to wake up isn't about total hours — it's about where in your sleep cycle the alarm fires." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"The Best Time to Wake Up for Deep Sleep (And Why It's Not About Hours)","description":"The best time to wake up is whenever a complete sleep cycle ends. Here is how to find yours.","url":"https://www.sleepcycler.com/blog/best-time-to-wake-up-for-deep-sleep","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

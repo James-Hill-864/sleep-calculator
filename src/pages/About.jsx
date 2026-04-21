@@ -8,6 +8,15 @@ export default function About() {
         <title>What Are Sleep Cycles and Why Do They Matter? — SleepCycler</title>
         <meta name="description" content="Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning. Science-backed guide." />
         <link rel="canonical" href="https://www.sleepcycler.com/about" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="What Are Sleep Cycles and Why Do They Matter?" />
+        <meta property="og:description" content="Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning." />
+        <meta property="og:url" content="https://www.sleepcycler.com/about" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="What Are Sleep Cycles and Why Do They Matter?" />
+        <meta name="twitter:description" content="Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What Are Sleep Cycles and Why Do They Determine How You Feel","description":"Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning.","url":"https://www.sleepcycler.com/about","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

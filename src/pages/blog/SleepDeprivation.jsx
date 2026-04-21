@@ -9,6 +9,15 @@ export default function SleepDeprivation() {
         <title>Sleep Deprivation Effects After One Night — SleepCycler</title>
         <meta name="description" content="What one bad night of sleep does to your brain, body, and mood. Backed by research from UPenn, Harvard, and UC Berkeley." />
         <link rel="canonical" href="https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="What One Night of Bad Sleep Does to Your Body and Brain" />
+        <meta property="og:description" content="The cognitive, physical, and emotional effects of a single night of poor sleep — backed by research from UPenn, Harvard, and UC Berkeley." />
+        <meta property="og:url" content="https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="What One Night of Bad Sleep Does to Your Body and Brain" />
+        <meta name="twitter:description" content="The cognitive, physical, and emotional effects of a single night of poor sleep — backed by research." />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What One Night of Bad Sleep Actually Does to Your Body and Brain","description":"The cognitive, physical, and emotional effects of a single night of poor sleep, backed by research.","url":"https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

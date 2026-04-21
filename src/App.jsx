@@ -16,6 +16,7 @@ import BestTimeToWake from './pages/blog/BestTimeToWake'
 import SleepDeprivation from './pages/blog/SleepDeprivation'
 import TiredAfter8Hours from './pages/blog/TiredAfter8Hours'
 import CatchUpOnSleepWeekend from './pages/blog/CatchUpOnSleepWeekend'
+import NotFound from './pages/NotFound'
 
 export default function App() {
   return (
@@ -38,6 +39,7 @@ export default function App() {
             <Route path="/blog/sleep-deprivation-effects-one-night" element={<SleepDeprivation />} />
             <Route path="/blog/why-am-i-still-tired-after-8-hours-of-sleep" element={<TiredAfter8Hours />} />
             <Route path="/blog/can-you-catch-up-on-sleep-on-the-weekend" element={<CatchUpOnSleepWeekend />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>
