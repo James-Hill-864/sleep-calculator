@@ -1,6 +1,6 @@
 const { chromium } = require('@playwright/test');
 
-const BASE_URL = 'https://sleepcycler.com';
+const BASE_URL = 'https://www.sleepcycler.com';
 
 const PAGES = [
   { name: '01-homepage', path: '/' },

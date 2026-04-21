@@ -7,8 +7,8 @@ export default function About() {
       <Helmet>
         <title>What Are Sleep Cycles and Why Do They Matter? — SleepCycler</title>
         <meta name="description" content="Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning. Science-backed guide." />
-        <link rel="canonical" href="https://sleepcycler.com/about" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What Are Sleep Cycles and Why Do They Determine How You Feel","description":"Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning.","url":"https://sleepcycler.com/about","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://sleepcycler.com"}})}</script>
+        <link rel="canonical" href="https://www.sleepcycler.com/about" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What Are Sleep Cycles and Why Do They Determine How You Feel","description":"Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning.","url":"https://www.sleepcycler.com/about","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

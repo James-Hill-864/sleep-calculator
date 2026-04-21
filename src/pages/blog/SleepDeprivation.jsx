@@ -8,8 +8,8 @@ export default function SleepDeprivation() {
       <Helmet>
         <title>Sleep Deprivation Effects After One Night — SleepCycler</title>
         <meta name="description" content="What one bad night of sleep does to your brain, body, and mood. Backed by research from UPenn, Harvard, and UC Berkeley." />
-        <link rel="canonical" href="https://sleepcycler.com/blog/sleep-deprivation-effects-one-night" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What One Night of Bad Sleep Actually Does to Your Body and Brain","description":"The cognitive, physical, and emotional effects of a single night of poor sleep, backed by research.","url":"https://sleepcycler.com/blog/sleep-deprivation-effects-one-night","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://sleepcycler.com"}})}</script>
+        <link rel="canonical" href="https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What One Night of Bad Sleep Actually Does to Your Body and Brain","description":"The cognitive, physical, and emotional effects of a single night of poor sleep, backed by research.","url":"https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

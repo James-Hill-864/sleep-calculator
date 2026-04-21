@@ -8,8 +8,8 @@ export default function HowManyCycles() {
       <Helmet>
         <title>How Many Sleep Cycles Do You Need? (By Age) — SleepCycler</title>
         <meta name="description" content="Adults need 5 sleep cycles (7.5 hrs), teens need 6 (9 hrs), seniors need 5. Here's what happens when you miss one." />
-        <link rel="canonical" href="https://sleepcycler.com/blog/how-many-sleep-cycles-do-you-need" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How Many Sleep Cycles Do You Need? (By Age and Sleep Goal)","description":"Adults need 5 sleep cycles (7.5 hrs), teens need 6 (9 hrs). Here is what happens when you miss one.","url":"https://sleepcycler.com/blog/how-many-sleep-cycles-do-you-need","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://sleepcycler.com"}})}</script>
+        <link rel="canonical" href="https://www.sleepcycler.com/blog/how-many-sleep-cycles-do-you-need" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How Many Sleep Cycles Do You Need? (By Age and Sleep Goal)","description":"Adults need 5 sleep cycles (7.5 hrs), teens need 6 (9 hrs). Here is what happens when you miss one.","url":"https://www.sleepcycler.com/blog/how-many-sleep-cycles-do-you-need","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

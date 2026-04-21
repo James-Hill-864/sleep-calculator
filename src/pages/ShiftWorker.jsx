@@ -8,8 +8,8 @@ export default function ShiftWorker() {
       <Helmet>
         <title>Sleep Calculator for Shift Workers — SleepCycler</title>
         <meta name="description" content="Sleep calculator for shift workers, nurses, and early risers. Find the best bedtime for 4 AM, 5 AM, or any non-standard wake-up." />
-        <link rel="canonical" href="https://sleepcycler.com/shift-worker-sleep-calculator" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Sleep Calculator for Shift Workers: How to Get Quality Rest on Any Schedule","description":"Sleep calculator for shift workers, nurses, and early risers on non-standard schedules.","url":"https://sleepcycler.com/shift-worker-sleep-calculator","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://sleepcycler.com"}})}</script>
+        <link rel="canonical" href="https://www.sleepcycler.com/shift-worker-sleep-calculator" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Sleep Calculator for Shift Workers: How to Get Quality Rest on Any Schedule","description":"Sleep calculator for shift workers, nurses, and early risers on non-standard schedules.","url":"https://www.sleepcycler.com/shift-worker-sleep-calculator","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sleepcycler.com/sitemap.xml
+Sitemap: https://www.sleepcycler.com/sitemap.xml

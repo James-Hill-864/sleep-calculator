@@ -8,8 +8,8 @@ export default function CatchUpOnSleepWeekend() {
       <Helmet>
         <title>Can You Catch Up on Sleep on the Weekend? — SleepCycler</title>
         <meta name="description" content="Can weekend sleep fix a week of short nights? What the research actually says about sleep debt, recovery, and the limits of catch-up sleep." />
-        <link rel="canonical" href="https://sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Can You Catch Up on Sleep on the Weekend?","description":"What the research says about whether weekend sleep can undo a week of short nights — and the limits of catch-up sleep.","url":"https://sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://sleepcycler.com"}})}</script>
+        <link rel="canonical" href="https://www.sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend" />
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Can You Catch Up on Sleep on the Weekend?","description":"What the research says about whether weekend sleep can undo a week of short nights — and the limits of catch-up sleep.","url":"https://www.sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

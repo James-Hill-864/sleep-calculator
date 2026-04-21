@@ -45,7 +45,7 @@ export default function BlogIndex() {
       <Helmet>
         <title>Sleep Science Blog — SleepCycler</title>
         <meta name="description" content="Evidence-based articles on sleep cycles, bedtime math, sleep deprivation, and how to wake up feeling rested." />
-        <link rel="canonical" href="https://sleepcycler.com/blog" />
+        <link rel="canonical" href="https://www.sleepcycler.com/blog" />
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
