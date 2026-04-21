@@ -14,11 +14,11 @@ export default function HowManyCycles() {
         <meta property="og:title" content="How Many Sleep Cycles Do You Need? (By Age)" />
         <meta property="og:description" content="Adults need 5 sleep cycles (7.5 hrs), teens need 6 (9 hrs). Here's what happens when you miss one." />
         <meta property="og:url" content="https://www.sleepcycler.com/blog/how-many-sleep-cycles-do-you-need" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="How Many Sleep Cycles Do You Need? (By Age)" />
         <meta name="twitter:description" content="Adults need 5 sleep cycles (7.5 hrs), teens need 6 (9 hrs). Here's what happens when you miss one." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How Many Sleep Cycles Do You Need? (By Age and Sleep Goal)","description":"Adults need 5 sleep cycles (7.5 hrs), teens need 6 (9 hrs). Here is what happens when you miss one.","url":"https://www.sleepcycler.com/blog/how-many-sleep-cycles-do-you-need","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

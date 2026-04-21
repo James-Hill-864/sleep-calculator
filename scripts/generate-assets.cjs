@@ -167,15 +167,17 @@ const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
 </svg>
 `;
 
-async function renderToPng(browser, html, width, height, outPath) {
+async function renderToImage(browser, html, width, height, outPath, { scale = 1, type = 'png', quality } = {}) {
   const context = await browser.newContext({
     viewport: { width, height },
-    deviceScaleFactor: 2,
+    deviceScaleFactor: scale,
   });
   const page = await context.newPage();
   await page.setContent(html, { waitUntil: 'networkidle' });
   await page.waitForTimeout(500);
-  await page.screenshot({ path: outPath, omitBackground: false });
+  const opts = { path: outPath, omitBackground: false, type };
+  if (type === 'jpeg' && quality) opts.quality = quality;
+  await page.screenshot(opts);
   await context.close();
   console.log(`Wrote ${outPath}`);
 }
@@ -183,9 +185,12 @@ async function renderToPng(browser, html, width, height, outPath) {
 (async () => {
   const browser = await chromium.launch();
   try {
-    await renderToPng(browser, ogTemplate(), 1200, 630, path.join(OUT, 'og-image.png'));
-    await renderToPng(browser, appleTouchTemplate(), 180, 180, path.join(OUT, 'apple-touch-icon.png'));
-    await renderToPng(browser, faviconTemplate(32), 32, 32, path.join(OUT, 'favicon-32.png'));
+    // OG image: JPEG @ quality 88 — social platforms don't need retina, this cuts ~90% off size
+    await renderToImage(browser, ogTemplate(), 1200, 630, path.join(OUT, 'og-image.jpg'), { scale: 1, type: 'jpeg', quality: 88 });
+    // Also keep a PNG fallback for any consumer that wants lossless
+    await renderToImage(browser, ogTemplate(), 1200, 630, path.join(OUT, 'og-image.png'), { scale: 1, type: 'png' });
+    await renderToImage(browser, appleTouchTemplate(), 180, 180, path.join(OUT, 'apple-touch-icon.png'), { scale: 1, type: 'png' });
+    await renderToImage(browser, faviconTemplate(32), 32, 32, path.join(OUT, 'favicon-32.png'), { scale: 1, type: 'png' });
     fs.writeFileSync(path.join(OUT, 'favicon.svg'), faviconSvg);
     console.log(`Wrote ${path.join(OUT, 'favicon.svg')}`);
   } finally {

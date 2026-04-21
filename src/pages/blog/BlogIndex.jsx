@@ -37,6 +37,21 @@ const POSTS = [
     title: 'Can You Catch Up on Sleep on the Weekend?',
     description: 'What the research actually says about weekend recovery sleep, social jet lag, and the limits of catch-up.',
   },
+  {
+    to: '/blog/what-time-to-go-to-bed-wake-up-5am',
+    title: 'What Time Should I Go to Bed If I Wake Up at 5am?',
+    description: 'Exact bedtimes for early risers — why 5am alarms are unforgiving and how cycle alignment changes everything.',
+  },
+  {
+    to: '/blog/how-to-fall-asleep-fast',
+    title: 'How to Fall Asleep Fast — 9 Methods Backed by Science',
+    description: 'From the military method to cognitive shuffling — evidence-based techniques ranked by how quickly they work.',
+  },
+  {
+    to: '/blog/why-do-i-wake-up-at-3am-every-night',
+    title: 'Why Do I Wake Up at 3am Every Night?',
+    description: 'The seven most common causes of middle-of-the-night waking, in order of likelihood — plus the 2-week fix protocol.',
+  },
 ]
 
 export default function BlogIndex() {
@@ -50,11 +65,11 @@ export default function BlogIndex() {
         <meta property="og:title" content="Sleep Science Blog — SleepCycler" />
         <meta property="og:description" content="Evidence-based articles on sleep cycles, bedtime math, sleep deprivation, and how to wake up feeling rested." />
         <meta property="og:url" content="https://www.sleepcycler.com/blog" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sleep Science Blog — SleepCycler" />
         <meta name="twitter:description" content="Evidence-based articles on sleep cycles, bedtime math, sleep deprivation, and how to wake up feeling rested." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

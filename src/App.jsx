@@ -16,6 +16,9 @@ import BestTimeToWake from './pages/blog/BestTimeToWake'
 import SleepDeprivation from './pages/blog/SleepDeprivation'
 import TiredAfter8Hours from './pages/blog/TiredAfter8Hours'
 import CatchUpOnSleepWeekend from './pages/blog/CatchUpOnSleepWeekend'
+import WakeUp5am from './pages/blog/WakeUp5am'
+import HowToFallAsleepFast from './pages/blog/HowToFallAsleepFast'
+import WakeUpAt3am from './pages/blog/WakeUpAt3am'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -39,6 +42,9 @@ export default function App() {
             <Route path="/blog/sleep-deprivation-effects-one-night" element={<SleepDeprivation />} />
             <Route path="/blog/why-am-i-still-tired-after-8-hours-of-sleep" element={<TiredAfter8Hours />} />
             <Route path="/blog/can-you-catch-up-on-sleep-on-the-weekend" element={<CatchUpOnSleepWeekend />} />
+            <Route path="/blog/what-time-to-go-to-bed-wake-up-5am" element={<WakeUp5am />} />
+            <Route path="/blog/how-to-fall-asleep-fast" element={<HowToFallAsleepFast />} />
+            <Route path="/blog/why-do-i-wake-up-at-3am-every-night" element={<WakeUpAt3am />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

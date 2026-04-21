@@ -14,11 +14,11 @@ export default function CatchUpOnSleepWeekend() {
         <meta property="og:title" content="Can You Catch Up on Sleep on the Weekend?" />
         <meta property="og:description" content="What the research actually says about weekend recovery sleep, social jet lag, and the limits of catch-up." />
         <meta property="og:url" content="https://www.sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Can You Catch Up on Sleep on the Weekend?" />
         <meta name="twitter:description" content="What the research actually says about weekend recovery sleep, social jet lag, and the limits of catch-up." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Can You Catch Up on Sleep on the Weekend?","description":"What the research says about whether weekend sleep can undo a week of short nights — and the limits of catch-up sleep.","url":"https://www.sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

@@ -14,11 +14,11 @@ export default function SleepDeprivation() {
         <meta property="og:title" content="What One Night of Bad Sleep Does to Your Body and Brain" />
         <meta property="og:description" content="The cognitive, physical, and emotional effects of a single night of poor sleep — backed by research from UPenn, Harvard, and UC Berkeley." />
         <meta property="og:url" content="https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="What One Night of Bad Sleep Does to Your Body and Brain" />
         <meta name="twitter:description" content="The cognitive, physical, and emotional effects of a single night of poor sleep — backed by research." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What One Night of Bad Sleep Actually Does to Your Body and Brain","description":"The cognitive, physical, and emotional effects of a single night of poor sleep, backed by research.","url":"https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

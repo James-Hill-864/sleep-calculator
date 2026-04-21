@@ -12,11 +12,11 @@ export default function About() {
         <meta property="og:title" content="What Are Sleep Cycles and Why Do They Matter?" />
         <meta property="og:description" content="Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning." />
         <meta property="og:url" content="https://www.sleepcycler.com/about" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="What Are Sleep Cycles and Why Do They Matter?" />
         <meta name="twitter:description" content="Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What Are Sleep Cycles and Why Do They Determine How You Feel","description":"Sleep cycles explained: the 4 stages, why 90 minutes matters, and how waking mid-cycle ruins your morning.","url":"https://www.sleepcycler.com/about","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 
@@ -154,6 +154,106 @@ export default function About() {
               <p className="mt-3">
                 This is why the last cycle of the night matters for mood and cognition. People who consistently cut their sleep short by one cycle lose a disproportionate amount of REM, which accumulates as emotional instability, difficulty concentrating, and reduced creative problem-solving — even if they feel physically rested.
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-sleep-text mb-3">When the Cycle System Breaks</h2>
+              <p>
+                Understanding cycles is useful because it explains why common sleep complaints happen. Three of the most frequent:
+              </p>
+              <div className="space-y-4 mt-4">
+                <div className="rounded-xl bg-sleep-card border border-sleep-border p-5">
+                  <h3 className="text-sm font-bold text-sleep-text mb-1">&ldquo;I slept 8 hours and I&apos;m still exhausted&rdquo;</h3>
+                  <p className="text-sm text-sleep-muted leading-relaxed">
+                    8 hours doesn&apos;t divide evenly into 90-minute cycles — it puts your alarm roughly 30 minutes into cycle 6, deep in N2 or early N3. Moving to 7.5 hours (5 clean cycles) or 9 hours (6 clean cycles) reliably feels better. Our deep-dive on <Link to="/blog/why-am-i-still-tired-after-8-hours-of-sleep" className="text-sleep-accent hover:underline">why 8 hours leaves you groggy</Link> covers the six most common causes.
+                  </p>
+                </div>
+                <div className="rounded-xl bg-sleep-card border border-sleep-border p-5">
+                  <h3 className="text-sm font-bold text-sleep-text mb-1">&ldquo;I keep waking up at 3 AM&rdquo;</h3>
+                  <p className="text-sm text-sleep-muted leading-relaxed">
+                    3 AM wake-ups happen because cycle boundaries cluster around that time for most bedtimes — but the underlying reason you stay awake is usually cortisol dysregulation, late alcohol, or blood sugar crashes. Our guide to <Link to="/blog/why-do-i-wake-up-at-3am-every-night" className="text-sleep-accent hover:underline">3 AM waking</Link> breaks down the causes in order of likelihood.
+                  </p>
+                </div>
+                <div className="rounded-xl bg-sleep-card border border-sleep-border p-5">
+                  <h3 className="text-sm font-bold text-sleep-text mb-1">&ldquo;One bad night wrecks my whole week&rdquo;</h3>
+                  <p className="text-sm text-sleep-muted leading-relaxed">
+                    A single night under 4 cycles produces measurable cognitive, physical, and emotional deficits the next day — often worse than people realize. Our evidence-based breakdown of <Link to="/blog/sleep-deprivation-effects-one-night" className="text-sleep-accent hover:underline">what one night of bad sleep does to your body</Link> covers the research and the recovery protocol.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-sleep-text mb-3">Explore Further</h2>
+              <p className="mb-4">
+                Deep-dives grouped by topic. Everything here is built on the cycle-math foundation above.
+              </p>
+
+              <div className="mb-6">
+                <h3 className="text-[10px] font-bold text-sleep-faint uppercase tracking-widest mb-3">Bedtime by Wake Time</h3>
+                <div className="space-y-2">
+                  <Link to="/blog/what-time-to-go-to-bed-wake-up-5am" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">What time should I go to bed if I wake up at 5am?</div>
+                  </Link>
+                  <Link to="/blog/what-time-to-go-to-bed-wake-up-6am" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">What time should I go to bed if I wake up at 6am?</div>
+                  </Link>
+                  <Link to="/blog/what-time-to-sleep-wake-up-7am" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">What time should I go to bed if I wake up at 7am?</div>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-[10px] font-bold text-sleep-faint uppercase tracking-widest mb-3">How Rest Actually Works</h3>
+                <div className="space-y-2">
+                  <Link to="/blog/how-many-sleep-cycles-do-you-need" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">How many sleep cycles do you need? (By age)</div>
+                  </Link>
+                  <Link to="/blog/best-time-to-wake-up-for-deep-sleep" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">The best time to wake up for deep sleep</div>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-[10px] font-bold text-sleep-faint uppercase tracking-widest mb-3">When Sleep Goes Wrong</h3>
+                <div className="space-y-2">
+                  <Link to="/blog/why-am-i-still-tired-after-8-hours-of-sleep" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">Why am I still tired after 8 hours of sleep?</div>
+                  </Link>
+                  <Link to="/blog/why-do-i-wake-up-at-3am-every-night" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">Why do I wake up at 3am every night?</div>
+                  </Link>
+                  <Link to="/blog/sleep-deprivation-effects-one-night" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">What one night of bad sleep does to your body and brain</div>
+                  </Link>
+                  <Link to="/blog/can-you-catch-up-on-sleep-on-the-weekend" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">Can you catch up on sleep on the weekend?</div>
+                  </Link>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-[10px] font-bold text-sleep-faint uppercase tracking-widest mb-3">How to Improve</h3>
+                <div className="space-y-2">
+                  <Link to="/blog/how-to-fall-asleep-fast" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">How to fall asleep fast — 9 methods backed by science</div>
+                  </Link>
+                  <Link to="/sleep-tips" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">7 science-backed sleep tips</div>
+                  </Link>
+                  <Link to="/sleep-debt-calculator" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">Sleep debt calculator — recover what you owe</div>
+                  </Link>
+                  <Link to="/shift-worker-sleep-calculator" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">Sleep calculator for shift workers</div>
+                  </Link>
+                  <Link to="/best-mattresses" className="block rounded-xl bg-sleep-card border border-sleep-border p-4 hover:border-sleep-accent/20 transition-colors">
+                    <div className="text-sm font-bold text-sleep-text">Best mattresses for deep sleep</div>
+                  </Link>
+                </div>
+              </div>
             </section>
 
             <div className="rounded-2xl bg-sleep-surface border border-sleep-border p-6 mt-8">

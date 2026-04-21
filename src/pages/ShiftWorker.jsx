@@ -14,11 +14,11 @@ export default function ShiftWorker() {
         <meta property="og:title" content="Sleep Calculator for Shift Workers" />
         <meta property="og:description" content="Sleep calculator for shift workers, nurses, and early risers on non-standard schedules. Find the best bedtime for any wake-up time." />
         <meta property="og:url" content="https://www.sleepcycler.com/shift-worker-sleep-calculator" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sleep Calculator for Shift Workers" />
         <meta name="twitter:description" content="Sleep calculator for shift workers, nurses, and early risers on non-standard schedules." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Sleep Calculator for Shift Workers: How to Get Quality Rest on Any Schedule","description":"Sleep calculator for shift workers, nurses, and early risers on non-standard schedules.","url":"https://www.sleepcycler.com/shift-worker-sleep-calculator","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

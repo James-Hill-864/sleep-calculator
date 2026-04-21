@@ -14,11 +14,11 @@ export default function WakeUp6am() {
         <meta property="og:title" content="What Time Should I Go to Bed If I Wake Up at 6am?" />
         <meta property="og:description" content="Go to bed at 8:45 PM, 10:15 PM, or 11:45 PM to wake up at 6am feeling rested. Full sleep cycle breakdown." />
         <meta property="og:url" content="https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-6am" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="What Time Should I Go to Bed If I Wake Up at 6am?" />
         <meta name="twitter:description" content="Go to bed at 8:45 PM, 10:15 PM, or 11:45 PM to wake up at 6am feeling rested." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What Time Should I Go to Bed If I Wake Up at 6am?","description":"Go to bed at 8:45 PM, 10:15 PM, or 11:45 PM to wake up at 6am feeling rested. Full sleep cycle breakdown.","url":"https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-6am","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
       </Helmet>
 

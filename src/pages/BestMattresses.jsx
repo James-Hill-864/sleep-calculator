@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import MattressCard from '../components/MattressCard'
-import AdUnit from '../components/AdUnit'
 
 const MATTRESSES = [
   {
@@ -52,11 +51,11 @@ export default function BestMattresses() {
         <meta property="og:title" content="Best Mattresses for Deep Sleep (Ranked by Sleep Cycle Support)" />
         <meta property="og:description" content="5 mattresses ranked for deep sleep quality. Reviewed for temperature control, motion isolation, and sleep cycle support." />
         <meta property="og:url" content="https://www.sleepcycler.com/best-mattresses" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best Mattresses for Deep Sleep (Ranked by Sleep Cycle Support)" />
         <meta name="twitter:description" content="5 mattresses ranked for deep sleep quality. Reviewed for temperature control, motion isolation, and sleep cycle support." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Mattresses for Deep Sleep","description":"Top mattresses ranked for temperature regulation, motion isolation, and sleep cycle support.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Tuft & Needle Original Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":2,"name":"Linenspa 10\" Memory Foam Hybrid Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":3,"name":"Nectar Memory Foam Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":4,"name":"GhostBed Classic Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":5,"name":"Lucid 12\" Gel Memory Foam Mattress","url":"https://www.sleepcycler.com/best-mattresses"}]})}</script>
       </Helmet>
 
@@ -82,10 +81,6 @@ export default function BestMattresses() {
             {MATTRESSES.map(m => (
               <MattressCard key={m.name} {...m} />
             ))}
-          </div>
-
-          <div className="my-8">
-            <AdUnit slot="mattresses-bottom" />
           </div>
 
           {/* Buying guide */}

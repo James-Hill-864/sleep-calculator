@@ -71,11 +71,11 @@ export default function SleepDebt() {
         <meta property="og:title" content="Sleep Debt Calculator — How Much Sleep Do You Owe Your Body?" />
         <meta property="og:description" content="Calculate your sleep debt from the last 7 nights and get a recovery plan with cycle-aligned bedtimes." />
         <meta property="og:url" content="https://www.sleepcycler.com/sleep-debt-calculator" />
-        <meta property="og:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sleep Debt Calculator — How Much Sleep Do You Owe Your Body?" />
         <meta name="twitter:description" content="Calculate your sleep debt from the last 7 nights and get a recovery plan with cycle-aligned bedtimes." />
-        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
+        <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Sleep Debt Calculator","url":"https://www.sleepcycler.com/sleep-debt-calculator","description":"Calculate your sleep debt from the last 7 nights and get a personalized recovery plan.","applicationCategory":"HealthApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}})}</script>
       </Helmet>
 
