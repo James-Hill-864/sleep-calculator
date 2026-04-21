@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
+import AmazonProductCard from '../../components/AmazonProductCard'
 
 export default function BestTimeToWake() {
   return (
@@ -121,6 +122,13 @@ export default function BestTimeToWake() {
               <p className="mt-3">
                 For people who wake before sunrise — shift workers, winter months, windowless bedrooms — a dawn simulator light that gradually brightens over 30 minutes before the alarm can partially replicate the effect. The light doesn&apos;t need to be sunlight-intensity; even 200–500 lux is enough to influence the CAR.
               </p>
+
+              <AmazonProductCard
+                name="Hatch Restore 3 Sunrise Alarm Clock"
+                href="https://amzn.to/4mnWmip"
+                tag="Dawn simulator"
+                why="The clearest cycle-aligned wake-up tool on the market. The light ramps from dim to ~500 lux over 30 minutes before your alarm time, reinforcing the cortisol awakening response and pulling you toward N1 sleep — so the audible alarm rarely catches you in mid-cycle deep sleep. Most effective single intervention for reducing morning grogginess."
+              />
             </section>
 
             <section>

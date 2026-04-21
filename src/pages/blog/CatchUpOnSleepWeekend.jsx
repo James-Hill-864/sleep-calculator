@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
+import AmazonProductCard from '../../components/AmazonProductCard'
 
 export default function CatchUpOnSleepWeekend() {
   return (
@@ -131,6 +132,20 @@ export default function CatchUpOnSleepWeekend() {
                   </p>
                 </div>
               </div>
+
+              <AmazonProductCard
+                name="Hatch Restore 3 Sunrise Alarm Clock"
+                href="https://amzn.to/4mnWmip"
+                tag="Wake-time anchor"
+                why="The whole weekend-recovery strategy depends on keeping Saturday and Sunday wake times within 30 minutes of your weekday baseline. A sunrise alarm makes that dramatically easier — the gradual light pulls you toward lighter sleep so an 7 AM Saturday wake feels voluntary, not forced. The single best tool for protecting circadian consistency while still recovering sleep."
+              />
+
+              <AmazonProductCard
+                name="Magnesium Glycinate for Sleep"
+                href="https://amzn.to/4ckKxoe"
+                tag="Faster Friday sleep onset"
+                why="Front-loaded weekend recovery (going to bed 90 minutes earlier Friday and Saturday) only works if you actually fall asleep at the earlier time — which is hard when your weeknight routine has trained you to wind down later. Magnesium glycinate modestly reduces sleep onset latency, helping the 9:30 PM bedtime actually produce sleep by 9:45 instead of 10:30."
+              />
             </section>
 
             <section>

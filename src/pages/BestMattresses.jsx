@@ -3,40 +3,42 @@ import { Helmet } from 'react-helmet-async'
 import MattressCard from '../components/MattressCard'
 import AdUnit from '../components/AdUnit'
 
+// TODO: Replace each affiliateLink with an Amazon affiliate shortlink (amzn.to/...).
+// Generate via Amazon Associates → SiteStripe on each product's Amazon page.
 const MATTRESSES = [
   {
-    name: 'Nectar Sleep',
-    price: '$799 – $1,499',
-    why: 'Gel-infused memory foam that sleeps noticeably cooler than traditional memory foam. Excellent pressure relief for side sleepers, and minimal motion transfer — your partner rolling over won\'t pull you out of a deep sleep cycle.',
-    affiliateLink: '[AFFILIATE_LINK_NECTAR]',
+    name: 'Tuft & Needle Original Mattress',
+    price: '$395 – $795',
+    why: 'Tuft & Needle\'s adaptive foam is denser than standard memory foam, so it holds its shape through the night rather than softening from body heat — meaning your spinal alignment doesn\'t drift after hour three. Graphite and cooling gel are built into the foam itself, so surface temperature stays closer to ambient. Balanced firmness works for back and side sleepers without requiring a firmness choice at purchase.',
+    affiliateLink: 'TODO_AMZN_TUFT_NEEDLE',
     badge: "Editor's Pick",
   },
   {
-    name: 'Brooklyn Bedding Signature Hybrid',
-    price: '$749 – $1,349',
-    why: 'Individually wrapped coils provide airflow that foam-only mattresses can\'t match — a direct advantage for reaching and maintaining the lower core temperature deep sleep requires. The TitanFlex comfort layer is responsive enough that repositioning doesn\'t require fully waking up.',
-    affiliateLink: '[AFFILIATE_LINK_BROOKLYN]',
-    badge: null,
+    name: 'Linenspa 10" Memory Foam Hybrid Mattress',
+    price: '$199 – $399',
+    why: 'The best entry-price hybrid on Amazon. Innerspring coils give the airflow that all-foam mattresses lack, keeping the sleeping surface cooler through the night. A 2.5" comfort foam layer handles pressure relief well enough for side sleepers. Not a luxury build, but the temperature and motion-isolation fundamentals are sound — rare at this price point.',
+    affiliateLink: 'TODO_AMZN_LINENSPA',
+    badge: 'Best Value',
   },
   {
-    name: 'Casper Original',
-    price: '$895 – $2,495',
-    why: 'Zoned support system uses firmer foam under the hips and softer foam under the shoulders, reducing the pressure points that cause tossing. Zoned support reduces pressure points at the hips and shoulders, the two primary triggers for nighttime repositioning — fewer position changes means fewer micro-arousals and more uninterrupted cycles.',
-    affiliateLink: '[AFFILIATE_LINK_CASPER]',
-    badge: null,
+    name: 'Nectar Memory Foam Mattress',
+    price: '$499 – $1,299',
+    why: 'A 7-layer memory foam construction that prioritizes deep pressure relief. Side sleepers get the shoulder and hip contouring that reduces the micro-repositioning responsible for most nighttime cycle fragmentation. The quilted cooling cover and gel-infused foam handle heat better than most all-foam builds, though hybrids will still sleep cooler. 365-night trial via Amazon.',
+    affiliateLink: 'TODO_AMZN_NECTAR',
+    badge: 'Best for Side Sleepers',
   },
   {
-    name: 'Saatva Classic',
-    price: '$1,095 – $2,295',
-    why: 'Dual coil-on-coil construction provides deep support without the "sinking" sensation that traps body heat in foam layers. The pillow top adds surface comfort while the coils maintain spinal alignment. Best for back sleepers and heavier body types who need support that doesn\'t degrade over the night as foam softens from heat.',
-    affiliateLink: '[AFFILIATE_LINK_SAATVA]',
-    badge: 'Best Luxury',
+    name: 'GhostBed Classic Mattress',
+    price: '$695 – $1,495',
+    why: 'Aerated gel memory foam on top of high-density support foam — the aeration is the key detail. Instead of relying on a cooling cover (which stops working once your body heats it), GhostBed\'s top layer lets heat escape through the foam itself. Result: more consistent surface temperature across the full 7.5–9 hour cycle window. Firmer than Nectar, better for back sleepers and combination sleepers.',
+    affiliateLink: 'TODO_AMZN_GHOSTBED',
+    badge: 'Best Cooling Foam',
   },
   {
-    name: 'Purple Original',
-    price: '$1,099 – $2,999',
-    why: 'The GelFlex Grid is temperature-neutral by design — it doesn\'t absorb and radiate body heat the way foam does. If you consistently wake up hot at 2 or 3 AM, that\'s your mattress forcing your body to fight its own thermoregulation. Purple eliminates that variable. The grid also isolates motion through flex rather than compression, keeping vibrations local.',
-    affiliateLink: '[AFFILIATE_LINK_PURPLE]',
+    name: 'Cocoon by Sealy Chill Memory Foam Mattress',
+    price: '$499 – $999',
+    why: 'Sealy\'s phase-change cover is the strongest active cooling mechanism in this price tier — the fabric absorbs body heat when you warm up and releases it when you cool down, flattening the nightly temperature curve. If you consistently wake up hot at 2 or 3 AM with a flipped pillow, that\'s the problem this mattress is built to solve. Memory foam underneath provides pressure relief, though motion isolation is only average.',
+    affiliateLink: 'TODO_AMZN_COCOON_CHILL',
     badge: 'Best for Hot Sleepers',
   },
 ]
@@ -57,7 +59,7 @@ export default function BestMattresses() {
         <meta name="twitter:title" content="Best Mattresses for Deep Sleep (Ranked by Sleep Cycle Support)" />
         <meta name="twitter:description" content="5 mattresses ranked for deep sleep quality. Reviewed for temperature control, motion isolation, and sleep cycle support." />
         <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Mattresses for Deep Sleep","description":"Top mattresses ranked for temperature regulation, motion isolation, and sleep cycle support.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Nectar Sleep","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":2,"name":"Brooklyn Bedding Signature Hybrid","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":3,"name":"Casper Original","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":4,"name":"Saatva Classic","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":5,"name":"Purple Original","url":"https://www.sleepcycler.com/best-mattresses"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Mattresses for Deep Sleep","description":"Top mattresses ranked for temperature regulation, motion isolation, and sleep cycle support.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Tuft & Needle Original Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":2,"name":"Linenspa 10\" Memory Foam Hybrid Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":3,"name":"Nectar Memory Foam Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":4,"name":"GhostBed Classic Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":5,"name":"Cocoon by Sealy Chill Memory Foam Mattress","url":"https://www.sleepcycler.com/best-mattresses"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

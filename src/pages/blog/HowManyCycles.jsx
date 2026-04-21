@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
+import AmazonProductCard from '../../components/AmazonProductCard'
 
 export default function HowManyCycles() {
   return (
@@ -152,6 +153,13 @@ export default function HowManyCycles() {
               <p className="mt-3">
                 For a deeper look at what happens inside each cycle, see our <Link to="/about" className="text-sleep-accent hover:underline">guide to sleep cycle stages</Link>. For practical advice on falling asleep within the 15-minute buffer, check our <Link to="/sleep-tips" className="text-sleep-accent hover:underline">7 evidence-based sleep tips</Link>.
               </p>
+
+              <AmazonProductCard
+                name="Hatch Restore 3 Sunrise Alarm Clock"
+                href="https://amzn.to/4mnWmip"
+                tag="Cycle-aligned wake"
+                why="Hitting a consistent cycle count depends on a consistent wake time. The Hatch sunrise simulation lifts you toward lighter sleep over 30 minutes before the alarm sounds — making it much easier to wake at the same time every day, which is the single strongest signal for circadian stability and consistent cycle counts."
+              />
             </section>
 
             <section>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
+import AmazonProductCard from '../../components/AmazonProductCard'
 
 export default function WakeUp6am() {
   return (
@@ -136,6 +137,13 @@ export default function WakeUp6am() {
               <p className="mt-3">
                 This is the entire argument for cycle-aligned sleep: <strong className="text-sleep-text">it&apos;s not about sleeping more, it&apos;s about sleeping in complete units.</strong> Six hours ending at a cycle boundary will consistently feel better than seven hours ending mid-cycle. For a deeper look at the biology, see our <Link to="/about" className="text-sleep-accent hover:underline">guide to sleep cycle stages</Link>.
               </p>
+
+              <AmazonProductCard
+                name="Hatch Restore 3 Sunrise Alarm Clock"
+                href="https://amzn.to/4mnWmip"
+                tag="For 6am wake-ups"
+                why="The single biggest upgrade for hitting a cycle-aligned 6am wake-up. Instead of a jarring buzz that can rip you out of mid-cycle N2 or N3, the Hatch simulates a 30-minute sunrise that gently lifts you toward N1 before the actual alarm fires — the physiological equivalent of ending on a cycle boundary even if your timing is slightly off."
+              />
             </section>
 
             <section>
@@ -146,6 +154,13 @@ export default function WakeUp6am() {
               <p className="mt-3">
                 But the better fix is reducing your sleep onset latency rather than going to bed even earlier. Consistently taking more than 20 minutes to fall asleep is a signal that something in your sleep environment or pre-bed routine is working against you — screen exposure, caffeine timing, room temperature, or an uncomfortable sleep surface. Our <Link to="/sleep-tips" className="text-sleep-accent hover:underline">7 evidence-based sleep tips</Link> address each of these.
               </p>
+
+              <AmazonProductCard
+                name="Blackout Curtains (100% Room Darkening)"
+                href="https://amzn.to/4cn4smP"
+                tag="Early sleeper essential"
+                why="If you&apos;re trying to fall asleep by 10:15 PM, summer daylight and streetlights leaking through your window are actively suppressing melatonin production. Heavyweight blackout curtains drop room illuminance to near-zero, which can cut sleep onset latency by 10–15 minutes on bright evenings — often the difference between hitting and missing your cycle target."
+              />
             </section>
 
             <section>

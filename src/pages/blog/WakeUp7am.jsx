@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
+import AmazonProductCard from '../../components/AmazonProductCard'
 
 export default function WakeUp7am() {
   return (
@@ -115,6 +116,13 @@ export default function WakeUp7am() {
               <p className="mt-3">
                 The takeaway isn&apos;t that you should sleep less. It&apos;s that if you&apos;re going to miss your ideal bedtime, round to the next cycle boundary rather than splitting the difference. If you can&apos;t be in bed by 11:15 PM, aim for 12:45 AM — not midnight.
               </p>
+
+              <AmazonProductCard
+                name="Hatch Restore 3 Sunrise Alarm Clock"
+                href="https://amzn.to/4mnWmip"
+                tag="Cycle-friendly wake"
+                why="A gradual 30-minute sunrise simulation pulls you toward lighter N1 sleep before the audible alarm fires — effectively extending your cycle-alignment window by half an hour. If you occasionally miss your ideal bedtime, this is the single best hedge against feeling wrecked at 7:00 AM."
+              />
             </section>
 
             <section>

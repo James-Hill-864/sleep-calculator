@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
+import AmazonProductCard from '../../components/AmazonProductCard'
 
 export default function TiredAfter8Hours() {
   return (
@@ -74,6 +75,20 @@ export default function TiredAfter8Hours() {
               <p className="mt-3">
                 If you suspect fragmentation, the most common causes are bedroom temperature above 68&deg;F, alcohol within three hours of bedtime, and late-evening caffeine. See our <Link to="/sleep-tips" className="text-sleep-accent hover:underline">sleep tips guide</Link> for the full protocol.
               </p>
+
+              <AmazonProductCard
+                name="Blackout Curtains (100% Room Darkening)"
+                href="https://amzn.to/4cn4smP"
+                tag="Fragmentation fix"
+                why="One of the most common hidden causes of cycle fragmentation is light intrusion — a streetlight, car headlights sweeping the ceiling, or the 4:30 AM summer sunrise. Even brief exposure suppresses melatonin enough to arrest progress through a cycle. Heavyweight blackout curtains drop bedroom illuminance to near-zero, often eliminating the micro-arousals you never knew you were having."
+              />
+
+              <AmazonProductCard
+                name="Contoured Sleep Mask (100% Blackout)"
+                href="https://amzn.to/4t1F5Ok"
+                tag="Travel-friendly alternative"
+                why="If installing blackout curtains isn&apos;t an option — rentals, travel, partner preferences — a contoured sleep mask achieves the same light-blocking outcome at the eye level where it actually matters. The contoured shape prevents pressure on the eyelids, which is what makes flat masks uncomfortable after an hour."
+              />
             </section>
 
             <section>

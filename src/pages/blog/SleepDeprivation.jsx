@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
+import AmazonProductCard from '../../components/AmazonProductCard'
 
 export default function SleepDeprivation() {
   return (
@@ -152,6 +153,20 @@ export default function SleepDeprivation() {
                   </p>
                 </div>
               </div>
+
+              <AmazonProductCard
+                name="Magnesium Glycinate for Sleep"
+                href="https://amzn.to/4ckKxoe"
+                tag="Recovery-night aid"
+                why="The elevated evening cortisol after a bad night makes it harder to fall asleep the following night, creating a two-night cascade. Magnesium glycinate supports GABA signaling and has been shown in small clinical trials to reduce sleep onset latency and improve sleep quality — particularly useful the night after a rough one. Glycinate form is gentler on the gut than citrate or oxide."
+              />
+
+              <AmazonProductCard
+                name="Contoured Sleep Mask (100% Blackout)"
+                href="https://amzn.to/4t1F5Ok"
+                tag="Light blocker"
+                why="Your recovery night needs maximum REM, and REM is the first casualty of light intrusion through eyelids. A contoured mask that doesn&apos;t press on the eyes blocks all ambient light — streetlights, a partner's reading lamp, the early-morning sunrise that ends your last cycle prematurely. One of the highest-ROI sleep purchases you can make."
+              />
 
               <p className="mt-4">
                 For the full pre-bed protocol, see our <Link to="/sleep-tips" className="text-sleep-accent hover:underline">7 evidence-based sleep tips</Link>. For understanding why cycle alignment matters for recovery sleep, see our <Link to="/about" className="text-sleep-accent hover:underline">guide to sleep cycle stages</Link>.
