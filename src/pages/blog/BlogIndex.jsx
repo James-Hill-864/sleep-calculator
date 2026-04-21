@@ -27,6 +27,16 @@ const POSTS = [
     title: 'What One Night of Bad Sleep Actually Does to Your Body and Brain',
     description: 'The cognitive, physical, and emotional effects of a single night of poor sleep — backed by research.',
   },
+  {
+    to: '/blog/why-am-i-still-tired-after-8-hours-of-sleep',
+    title: 'Why Am I Still Tired After 8 Hours of Sleep?',
+    description: 'Six reasons 8 hours leaves you groggy — and why cycle timing matters more than duration.',
+  },
+  {
+    to: '/blog/can-you-catch-up-on-sleep-on-the-weekend',
+    title: 'Can You Catch Up on Sleep on the Weekend?',
+    description: 'What the research actually says about weekend recovery sleep, social jet lag, and the limits of catch-up.',
+  },
 ]
 
 export default function BlogIndex() {

@@ -60,4 +60,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://sleepcycler.com/blog/why-am-i-still-tired-after-8-hours-of-sleep</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
