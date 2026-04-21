@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import EmailSignup from '../../components/EmailSignup'
 
 const POSTS = [
   {
@@ -105,6 +106,13 @@ export default function BlogIndex() {
             </Link>
           ))}
         </div>
+
+        <section className="mt-12">
+          <EmailSignup
+            heading="New post in your inbox, weekly"
+            subhead="One evidence-based sleep science article per week. Same voice, same depth. No wellness fluff, no spam."
+          />
+        </section>
       </main>
     </>
   )
