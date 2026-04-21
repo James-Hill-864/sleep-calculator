@@ -3,42 +3,40 @@ import { Helmet } from 'react-helmet-async'
 import MattressCard from '../components/MattressCard'
 import AdUnit from '../components/AdUnit'
 
-// TODO: Replace each affiliateLink with an Amazon affiliate shortlink (amzn.to/...).
-// Generate via Amazon Associates → SiteStripe on each product's Amazon page.
 const MATTRESSES = [
   {
     name: 'Tuft & Needle Original Mattress',
     price: '$395 – $795',
     why: 'Tuft & Needle\'s adaptive foam is denser than standard memory foam, so it holds its shape through the night rather than softening from body heat — meaning your spinal alignment doesn\'t drift after hour three. Graphite and cooling gel are built into the foam itself, so surface temperature stays closer to ambient. Balanced firmness works for back and side sleepers without requiring a firmness choice at purchase.',
-    affiliateLink: 'TODO_AMZN_TUFT_NEEDLE',
+    affiliateLink: 'https://amzn.to/4cDFu2I',
     badge: "Editor's Pick",
   },
   {
     name: 'Linenspa 10" Memory Foam Hybrid Mattress',
     price: '$199 – $399',
     why: 'The best entry-price hybrid on Amazon. Innerspring coils give the airflow that all-foam mattresses lack, keeping the sleeping surface cooler through the night. A 2.5" comfort foam layer handles pressure relief well enough for side sleepers. Not a luxury build, but the temperature and motion-isolation fundamentals are sound — rare at this price point.',
-    affiliateLink: 'TODO_AMZN_LINENSPA',
+    affiliateLink: 'https://amzn.to/4sERDKt',
     badge: 'Best Value',
   },
   {
     name: 'Nectar Memory Foam Mattress',
     price: '$499 – $1,299',
     why: 'A 7-layer memory foam construction that prioritizes deep pressure relief. Side sleepers get the shoulder and hip contouring that reduces the micro-repositioning responsible for most nighttime cycle fragmentation. The quilted cooling cover and gel-infused foam handle heat better than most all-foam builds, though hybrids will still sleep cooler. 365-night trial via Amazon.',
-    affiliateLink: 'TODO_AMZN_NECTAR',
+    affiliateLink: 'https://amzn.to/3OBku4n',
     badge: 'Best for Side Sleepers',
   },
   {
     name: 'GhostBed Classic Mattress',
     price: '$695 – $1,495',
     why: 'Aerated gel memory foam on top of high-density support foam — the aeration is the key detail. Instead of relying on a cooling cover (which stops working once your body heats it), GhostBed\'s top layer lets heat escape through the foam itself. Result: more consistent surface temperature across the full 7.5–9 hour cycle window. Firmer than Nectar, better for back sleepers and combination sleepers.',
-    affiliateLink: 'TODO_AMZN_GHOSTBED',
+    affiliateLink: 'https://amzn.to/4mJTtsr',
     badge: 'Best Cooling Foam',
   },
   {
-    name: 'Cocoon by Sealy Chill Memory Foam Mattress',
-    price: '$499 – $999',
-    why: 'Sealy\'s phase-change cover is the strongest active cooling mechanism in this price tier — the fabric absorbs body heat when you warm up and releases it when you cool down, flattening the nightly temperature curve. If you consistently wake up hot at 2 or 3 AM with a flipped pillow, that\'s the problem this mattress is built to solve. Memory foam underneath provides pressure relief, though motion isolation is only average.',
-    affiliateLink: 'TODO_AMZN_COCOON_CHILL',
+    name: 'Lucid 12" Gel Memory Foam Mattress',
+    price: '$299 – $599',
+    why: 'Ventilated gel-infused memory foam that genuinely runs cooler than standard foam in the sub-$600 range. The 12" profile adds a 2.5" gel comfort layer on top of a 7.5" support core — thick enough to contour at the shoulders and hips without bottoming out. Widely reviewed, consistently strong scores from hot sleepers who can\'t justify the GhostBed price point. Solid choice if running hot is your primary complaint and budget is the constraint.',
+    affiliateLink: 'TODO_AMZN_LUCID',
     badge: 'Best for Hot Sleepers',
   },
 ]
@@ -59,7 +57,7 @@ export default function BestMattresses() {
         <meta name="twitter:title" content="Best Mattresses for Deep Sleep (Ranked by Sleep Cycle Support)" />
         <meta name="twitter:description" content="5 mattresses ranked for deep sleep quality. Reviewed for temperature control, motion isolation, and sleep cycle support." />
         <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.png" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Mattresses for Deep Sleep","description":"Top mattresses ranked for temperature regulation, motion isolation, and sleep cycle support.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Tuft & Needle Original Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":2,"name":"Linenspa 10\" Memory Foam Hybrid Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":3,"name":"Nectar Memory Foam Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":4,"name":"GhostBed Classic Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":5,"name":"Cocoon by Sealy Chill Memory Foam Mattress","url":"https://www.sleepcycler.com/best-mattresses"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Mattresses for Deep Sleep","description":"Top mattresses ranked for temperature regulation, motion isolation, and sleep cycle support.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Tuft & Needle Original Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":2,"name":"Linenspa 10\" Memory Foam Hybrid Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":3,"name":"Nectar Memory Foam Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":4,"name":"GhostBed Classic Mattress","url":"https://www.sleepcycler.com/best-mattresses"},{"@type":"ListItem","position":5,"name":"Lucid 12\" Gel Memory Foam Mattress","url":"https://www.sleepcycler.com/best-mattresses"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
