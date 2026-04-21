@@ -20,6 +20,7 @@ export default function CatchUpOnSleepWeekend() {
         <meta name="twitter:description" content="What the research actually says about weekend recovery sleep, social jet lag, and the limits of catch-up." />
         <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Can You Catch Up on Sleep on the Weekend?","description":"What the research says about whether weekend sleep can undo a week of short nights — and the limits of catch-up sleep.","url":"https://www.sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sleepcycler.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sleepcycler.com/blog"},{"@type":"ListItem","position":3,"name":"Can You Catch Up on Sleep on the Weekend?","item":"https://www.sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

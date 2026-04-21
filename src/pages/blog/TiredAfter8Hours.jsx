@@ -20,6 +20,7 @@ export default function TiredAfter8Hours() {
         <meta name="twitter:description" content="Why 8 hours isn't always enough — the science of sleep cycles and why timing matters more than duration." />
         <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"Why Am I Still Tired After 8 Hours of Sleep?","description":"The science of why 8 hours of sleep can leave you groggy — and how sleep cycle timing determines how rested you feel.","url":"https://www.sleepcycler.com/blog/why-am-i-still-tired-after-8-hours-of-sleep","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sleepcycler.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sleepcycler.com/blog"},{"@type":"ListItem","position":3,"name":"Why Am I Still Tired After 8 Hours of Sleep?","item":"https://www.sleepcycler.com/blog/why-am-i-still-tired-after-8-hours-of-sleep"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

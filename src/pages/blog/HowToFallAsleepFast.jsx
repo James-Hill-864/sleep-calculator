@@ -20,6 +20,7 @@ export default function HowToFallAsleepFast() {
         <meta name="twitter:description" content="Fall asleep in 10 minutes or less. 9 evidence-based techniques that actually work." />
         <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"How to Fall Asleep Fast: 9 Methods Backed by Science","description":"Nine evidence-based techniques to fall asleep in 10 minutes or less, ranked by speed of effect.","url":"https://www.sleepcycler.com/blog/how-to-fall-asleep-fast","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sleepcycler.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sleepcycler.com/blog"},{"@type":"ListItem","position":3,"name":"How to Fall Asleep Fast","item":"https://www.sleepcycler.com/blog/how-to-fall-asleep-fast"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

@@ -20,6 +20,7 @@ export default function WakeUp6am() {
         <meta name="twitter:description" content="Go to bed at 8:45 PM, 10:15 PM, or 11:45 PM to wake up at 6am feeling rested." />
         <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Article","headline":"What Time Should I Go to Bed If I Wake Up at 6am?","description":"Go to bed at 8:45 PM, 10:15 PM, or 11:45 PM to wake up at 6am feeling rested. Full sleep cycle breakdown.","url":"https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-6am","publisher":{"@type":"Organization","name":"SleepCycler","url":"https://www.sleepcycler.com"}})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sleepcycler.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.sleepcycler.com/blog"},{"@type":"ListItem","position":3,"name":"What Time Should I Go to Bed If I Wake Up at 6am?","item":"https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-6am"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">

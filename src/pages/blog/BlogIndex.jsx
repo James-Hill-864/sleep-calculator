@@ -83,7 +83,7 @@ export default function BlogIndex() {
         </header>
 
         <p className="text-sm text-sleep-muted mb-6">
-          Need a quick answer? Use the <Link to="/" className="text-sleep-accent hover:underline">sleep calculator</Link> to find your ideal bedtime or wake time right now.
+          Need a quick answer? Use the <Link to="/" className="text-sleep-accent hover:underline">sleep calculator</Link> to find your ideal bedtime or wake time right now. Prefer a reader? <a href="/rss.xml" className="text-sleep-accent hover:underline">Subscribe via RSS</a>.
         </p>
 
         <div className="space-y-4">

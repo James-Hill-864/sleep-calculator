@@ -167,6 +167,139 @@ const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
 </svg>
 `;
 
+// Pinterest pin: 1000x1500 (2:3), vertical, optimized for Pinterest feed
+const PINTEREST_POSTS = [
+  { slug: 'what-time-to-go-to-bed-wake-up-5am', eyebrow: 'Bedtime Math', title: 'What time should I go to bed if I wake up at 5 AM?', kicker: 'Cycle-aligned bedtimes for early risers' },
+  { slug: 'what-time-to-go-to-bed-wake-up-6am', eyebrow: 'Bedtime Math', title: 'What time should I go to bed if I wake up at 6 AM?', kicker: 'Sleep-cycle math for the 6 AM alarm' },
+  { slug: 'what-time-to-sleep-wake-up-7am', eyebrow: 'Bedtime Math', title: 'What time should I go to bed if I wake up at 7 AM?', kicker: 'Optimal bedtimes for a 7 AM wake-up' },
+  { slug: 'how-many-sleep-cycles-do-you-need', eyebrow: 'Sleep Science', title: 'How many sleep cycles do you actually need?', kicker: 'By age, by goal, by the research' },
+  { slug: 'best-time-to-wake-up-for-deep-sleep', eyebrow: 'Sleep Science', title: 'The best time to wake up for deep sleep', kicker: 'Why 6 hours well-timed beats 8 hours interrupted' },
+  { slug: 'sleep-deprivation-effects-one-night', eyebrow: 'Sleep Science', title: 'What one bad night does to your brain', kicker: 'Research from UPenn, Harvard, UC Berkeley' },
+  { slug: 'why-am-i-still-tired-after-8-hours-of-sleep', eyebrow: 'Troubleshooting', title: 'Why am I still tired after 8 hours of sleep?', kicker: 'The six most common reasons' },
+  { slug: 'can-you-catch-up-on-sleep-on-the-weekend', eyebrow: 'Troubleshooting', title: 'Can you catch up on sleep on the weekend?', kicker: 'What the research actually says' },
+  { slug: 'how-to-fall-asleep-fast', eyebrow: 'Practical', title: 'How to fall asleep fast', kicker: '9 methods backed by science' },
+  { slug: 'why-do-i-wake-up-at-3am-every-night', eyebrow: 'Troubleshooting', title: 'Why do I wake up at 3 AM every night?', kicker: '7 causes ranked by likelihood' },
+];
+
+const pinterestTemplate = (post) => `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  ${FONT_LINK}
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1000px; height: 1500px; font-family: 'Inter', sans-serif; }
+    body {
+      background: ${COLORS.bg};
+      background-image:
+        radial-gradient(circle at 85% 10%, ${COLORS.accentGlow} 0%, transparent 50%),
+        radial-gradient(circle at 10% 90%, ${COLORS.accentDim} 0%, transparent 55%);
+      padding: 90px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      background: ${COLORS.accentDim};
+      border: 1px solid ${COLORS.accent};
+      display: flex; align-items: center; justify-content: center;
+    }
+    .brand-name {
+      color: ${COLORS.text};
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: -0.02em;
+    }
+    .brand-name-accent { color: ${COLORS.accent}; }
+    .eyebrow {
+      display: inline-block;
+      color: ${COLORS.accent};
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 10px 18px;
+      background: ${COLORS.accentDim};
+      border: 1px solid ${COLORS.accent};
+      border-radius: 999px;
+      align-self: flex-start;
+    }
+    .middle {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    h1 {
+      color: ${COLORS.text};
+      font-size: 86px;
+      font-weight: 800;
+      line-height: 1.03;
+      letter-spacing: -0.03em;
+      max-width: 820px;
+    }
+    h1 .accent { color: ${COLORS.accent}; }
+    .kicker {
+      color: ${COLORS.muted};
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1.4;
+      max-width: 780px;
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(100,120,160,0.25);
+      padding-top: 28px;
+    }
+    .url {
+      color: ${COLORS.accent};
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .cta {
+      color: ${COLORS.text};
+      font-size: 22px;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="brand">
+      <div class="brand-icon">${moonIcon(32)}</div>
+      <div class="brand-name">Sleep<span class="brand-name-accent">Cycler</span></div>
+    </div>
+    <div class="eyebrow">${post.eyebrow}</div>
+  </div>
+
+  <div class="middle">
+    <h1>${post.title}</h1>
+    <p class="kicker">${post.kicker}</p>
+  </div>
+
+  <div class="bottom">
+    <div class="url">sleepcycler.com</div>
+    <div class="cta">Read the full breakdown &rarr;</div>
+  </div>
+</body>
+</html>`;
+
 async function renderToImage(browser, html, width, height, outPath, { scale = 1, type = 'png', quality } = {}) {
   const context = await browser.newContext({
     viewport: { width, height },
@@ -193,6 +326,19 @@ async function renderToImage(browser, html, width, height, outPath, { scale = 1,
     await renderToImage(browser, faviconTemplate(32), 32, 32, path.join(OUT, 'favicon-32.png'), { scale: 1, type: 'png' });
     fs.writeFileSync(path.join(OUT, 'favicon.svg'), faviconSvg);
     console.log(`Wrote ${path.join(OUT, 'favicon.svg')}`);
+
+    // Pinterest pins: 1000x1500 vertical, one per blog post
+    const pinOut = path.join(OUT, 'pinterest');
+    if (!fs.existsSync(pinOut)) fs.mkdirSync(pinOut, { recursive: true });
+    for (const post of PINTEREST_POSTS) {
+      await renderToImage(
+        browser,
+        pinterestTemplate(post),
+        1000, 1500,
+        path.join(pinOut, `${post.slug}.jpg`),
+        { scale: 1, type: 'jpeg', quality: 88 }
+      );
+    }
   } finally {
     await browser.close();
   }

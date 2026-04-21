@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SleepCycler — Sleep Science Blog</title>
+    <link>https://www.sleepcycler.com/blog</link>
+    <atom:link href="https://www.sleepcycler.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Evidence-based articles on sleep cycles, bedtime math, sleep deprivation, and how to wake up feeling rested.</description>
+    <language>en-us</language>
+    <image>
+      <url>https://www.sleepcycler.com/og-image.jpg</url>
+      <title>SleepCycler — Sleep Science Blog</title>
+      <link>https://www.sleepcycler.com/blog</link>
+    </image>
+
+    <item>
+      <title>Why Do I Wake Up at 3am Every Night?</title>
+      <link>https://www.sleepcycler.com/blog/why-do-i-wake-up-at-3am-every-night</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/why-do-i-wake-up-at-3am-every-night</guid>
+      <description>The seven most common causes of middle-of-the-night waking — cortisol, blood sugar, alcohol, cycle boundaries, anxiety, nocturia, sleep apnea — ranked by likelihood, with a 2-week fix protocol.</description>
+    </item>
+
+    <item>
+      <title>How to Fall Asleep Fast — 9 Methods Backed by Science</title>
+      <link>https://www.sleepcycler.com/blog/how-to-fall-asleep-fast</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/how-to-fall-asleep-fast</guid>
+      <description>From the military method to cognitive shuffling — nine evidence-based techniques ranked by how quickly they produce results.</description>
+    </item>
+
+    <item>
+      <title>What Time Should I Go to Bed If I Wake Up at 5am?</title>
+      <link>https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-5am</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-5am</guid>
+      <description>Exact bedtimes for early risers — why 5am alarms are unforgiving and how cycle alignment changes everything.</description>
+    </item>
+
+    <item>
+      <title>Can You Catch Up on Sleep on the Weekend?</title>
+      <link>https://www.sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/can-you-catch-up-on-sleep-on-the-weekend</guid>
+      <description>What the research actually says about weekend recovery sleep, social jet lag, and the limits of catch-up.</description>
+    </item>
+
+    <item>
+      <title>Why Am I Still Tired After 8 Hours of Sleep?</title>
+      <link>https://www.sleepcycler.com/blog/why-am-i-still-tired-after-8-hours-of-sleep</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/why-am-i-still-tired-after-8-hours-of-sleep</guid>
+      <description>Six reasons 8 hours leaves you groggy — and why cycle timing matters more than duration.</description>
+    </item>
+
+    <item>
+      <title>What One Night of Bad Sleep Actually Does to Your Body and Brain</title>
+      <link>https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/sleep-deprivation-effects-one-night</guid>
+      <description>The cognitive, physical, and emotional effects of a single night of poor sleep — backed by research from UPenn, Harvard, and UC Berkeley.</description>
+    </item>
+
+    <item>
+      <title>The Best Time to Wake Up for Deep Sleep (And Why It's Not About Hours)</title>
+      <link>https://www.sleepcycler.com/blog/best-time-to-wake-up-for-deep-sleep</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/best-time-to-wake-up-for-deep-sleep</guid>
+      <description>Why 6 hours of well-timed sleep can feel better than 8 hours interrupted mid-cycle.</description>
+    </item>
+
+    <item>
+      <title>How Many Sleep Cycles Do You Need? (By Age and Sleep Goal)</title>
+      <link>https://www.sleepcycler.com/blog/how-many-sleep-cycles-do-you-need</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/how-many-sleep-cycles-do-you-need</guid>
+      <description>The difference between 4, 5, and 6 cycles — and what happens when you consistently miss one.</description>
+    </item>
+
+    <item>
+      <title>What Time Should I Go to Bed If I Wake Up at 7am?</title>
+      <link>https://www.sleepcycler.com/blog/what-time-to-sleep-wake-up-7am</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/what-time-to-sleep-wake-up-7am</guid>
+      <description>Optimal bedtimes for a 7am alarm — from 4.5 hours to a full 9 hours of cycle-aligned sleep.</description>
+    </item>
+
+    <item>
+      <title>What Time Should I Go to Bed If I Wake Up at 6am?</title>
+      <link>https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-6am</link>
+      <guid isPermaLink="true">https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-6am</guid>
+      <description>Exact bedtimes calculated using 90-minute sleep cycles, with the math behind each recommendation.</description>
+    </item>
+  </channel>
+</rss>
