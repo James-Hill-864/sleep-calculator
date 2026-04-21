@@ -36,7 +36,7 @@ const MATTRESSES = [
     name: 'Lucid 12" Gel Memory Foam Mattress',
     price: '$299 – $599',
     why: 'Ventilated gel-infused memory foam that genuinely runs cooler than standard foam in the sub-$600 range. The 12" profile adds a 2.5" gel comfort layer on top of a 7.5" support core — thick enough to contour at the shoulders and hips without bottoming out. Widely reviewed, consistently strong scores from hot sleepers who can\'t justify the GhostBed price point. Solid choice if running hot is your primary complaint and budget is the constraint.',
-    affiliateLink: 'TODO_AMZN_LUCID',
+    affiliateLink: 'https://amzn.to/4sERMxv',
     badge: 'Best for Hot Sleepers',
   },
 ]
