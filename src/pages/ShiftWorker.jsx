@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../components/Calculator'
+import AmazonProductCard from '../components/AmazonProductCard'
 
 export default function ShiftWorker() {
   return (
@@ -111,6 +112,27 @@ export default function ShiftWorker() {
                   <span><strong className="text-sleep-text">Cool room temperature.</strong> Daytime rooms are warmer than nighttime rooms. Your body still needs to drop 1°C to initiate sleep. Set the AC to 65–68°F or use a cooling mattress pad.</span>
                 </li>
               </ul>
+
+              <AmazonProductCard
+                name="Blackout Curtains (100% Room Darkening)"
+                href="https://amzn.to/4cn4smP"
+                tag="Non-negotiable"
+                why="For daytime sleepers, this is the single highest-ROI sleep purchase. Standard &ldquo;room-darkening&rdquo; curtains still let enough light through to suppress melatonin. True blackout curtains drop daytime illuminance by 95%+, which measurably increases time spent in deep N3 sleep. Tape the edges if light still leaks around the rod."
+              />
+
+              <AmazonProductCard
+                name="LectroFan White Noise Machine"
+                href="https://amzn.to/4e1Zbnd"
+                tag="Fragmentation blocker"
+                why="Daytime sleep is constantly interrupted by traffic, neighbors, and deliveries that night sleepers don't deal with. The LectroFan generates 20 non-looping fan and white noise sounds that provide a consistent acoustic floor — variable noises that would otherwise trigger micro-arousals stay below the threshold of conscious awareness."
+              />
+
+              <AmazonProductCard
+                name="Dreo Tower Fan for Bedroom"
+                href="https://amzn.to/4mstkhp"
+                tag="Thermoregulation"
+                why="Daytime bedroom temperatures run 4–6°F warmer than nighttime. If you can&apos;t run the AC cold enough to hit 65–68°F, a directed fan provides evaporative cooling on your face and neck that helps your body complete the 1°C core drop needed for sleep onset. Quiet enough to run continuously without interfering with white noise."
+              />
             </section>
           </div>
 

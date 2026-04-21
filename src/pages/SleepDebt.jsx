@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { calculateBedtimes, parseTimeInput, formatTime } from '../utils/sleepMath'
+import AmazonProductCard from '../components/AmazonProductCard'
 
 const AGE_GROUPS = [
   { id: 'teen', label: 'Teen', sub: 'Under 18', target: 9 },
@@ -231,6 +232,21 @@ export default function SleepDebt() {
                 )}
               </div>
             </div>
+
+            {/* Amazon products for debt recovery */}
+            <AmazonProductCard
+              name="Magnesium Glycinate for Sleep"
+              href="https://amzn.to/4ckKxoe"
+              tag="Recovery-night aid"
+              why="Sleep debt recovery requires consecutive full-length nights, which is hard when elevated cortisol from prior short nights keeps you wired at bedtime. Magnesium glycinate supports GABA signaling and has been shown in clinical trials to reduce sleep onset latency — the difference between hitting 6 full cycles on recovery night and falling 45 minutes short."
+            />
+
+            <AmazonProductCard
+              name="Hatch Restore 3 Sunrise Alarm Clock"
+              href="https://amzn.to/4mnWmip"
+              tag="Consistent wake time"
+              why="The fastest way out of sleep debt is a rigidly consistent wake time that anchors your circadian rhythm. The Hatch makes early weekend wake-ups actually tolerable via a 30-minute sunrise ramp, so you don't break the recovery streak by sleeping until noon on Saturday and re-creating the debt on Monday."
+            />
 
             {/* Affiliate bridge */}
             <div className="rounded-2xl bg-sleep-surface border border-sleep-border p-6 mt-6">

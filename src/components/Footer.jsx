@@ -46,7 +46,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-sleep-border pt-6 text-center">
+        <div className="border-t border-sleep-border pt-6 text-center space-y-2">
+          <p className="text-xs text-sleep-faint max-w-2xl mx-auto leading-relaxed">
+            As an Amazon Associate we earn from qualifying purchases. SleepCycler may earn a commission on links to products on this site, at no extra cost to you.
+          </p>
           <p className="text-xs text-sleep-faint">
             &copy; {new Date().getFullYear()} SleepCycler. Not medical advice. Consult a healthcare professional for sleep disorders.
           </p>
