@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../components/Calculator'
-import EmailSignup from '../components/EmailSignup'
 
 export default function Home() {
   return (
@@ -45,11 +44,6 @@ export default function Home() {
             {/* Calculator */}
             <section>
               <Calculator />
-            </section>
-
-            {/* Email signup */}
-            <section className="mt-12">
-              <EmailSignup />
             </section>
 
             {/* Quick explainer */}
