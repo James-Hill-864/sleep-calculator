@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import AmazonProductCard from '../../components/AmazonProductCard'
+import MedicalDisclaimer from '../../components/MedicalDisclaimer'
 
 export default function SleepEnvironment() {
   return (
@@ -30,6 +31,8 @@ export default function SleepEnvironment() {
               Sleep Environment: How Your Bedroom Affects Sleep Quality
             </h1>
           </header>
+
+          <MedicalDisclaimer />
 
           <div className="space-y-8 text-sm sm:text-base text-sleep-muted leading-[1.8]">
 

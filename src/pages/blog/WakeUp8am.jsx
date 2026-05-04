@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
 import AmazonProductCard from '../../components/AmazonProductCard'
+import MedicalDisclaimer from '../../components/MedicalDisclaimer'
 
 export default function WakeUp8am() {
   return (
@@ -31,6 +32,8 @@ export default function WakeUp8am() {
               What Time Should I Go to Bed If I Wake Up at 8am?
             </h1>
           </header>
+
+          <MedicalDisclaimer />
 
           {/* Calculator */}
           <section className="mb-10 rounded-2xl bg-sleep-surface border border-sleep-border p-6">

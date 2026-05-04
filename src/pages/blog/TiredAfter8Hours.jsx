@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
 import AmazonProductCard from '../../components/AmazonProductCard'
+import MedicalDisclaimer from '../../components/MedicalDisclaimer'
 
 export default function TiredAfter8Hours() {
   return (
@@ -31,6 +32,8 @@ export default function TiredAfter8Hours() {
               Why Am I Still Tired After 8 Hours of Sleep?
             </h1>
           </header>
+
+          <MedicalDisclaimer />
 
           {/* Calculator */}
           <section className="mb-10 rounded-2xl bg-sleep-surface border border-sleep-border p-6">

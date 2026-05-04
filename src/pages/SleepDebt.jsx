@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { calculateBedtimes, parseTimeInput, formatTime } from '../utils/sleepMath'
 import AmazonProductCard from '../components/AmazonProductCard'
+import MedicalDisclaimer from '../components/MedicalDisclaimer'
 
 const AGE_GROUPS = [
   { id: 'teen', label: 'Teen', sub: 'Under 18', target: 9 },
@@ -91,6 +92,8 @@ export default function SleepDebt() {
             Enter how many hours you slept each of the last 7 nights. We&apos;ll calculate your total sleep debt and build a recovery plan.
           </p>
         </header>
+
+        <MedicalDisclaimer />
 
         {/* Affiliate disclosure */}
         <div className="rounded-xl bg-sleep-surface border border-sleep-border px-4 py-3 mb-6">

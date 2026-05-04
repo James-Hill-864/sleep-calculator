@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import MedicalDisclaimer from '../components/MedicalDisclaimer'
 
 const TIPS = [
   {
@@ -64,6 +65,7 @@ export default function SleepTips() {
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
         <article>
+          <MedicalDisclaimer />
           <header className="mb-10">
             <h1 className="text-3xl sm:text-4xl font-bold text-sleep-text tracking-tight leading-tight mb-4">
               7 Science-Backed Ways to Fall Asleep Faster Tonight

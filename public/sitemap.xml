@@ -26,6 +26,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.sleepcycler.com/best-sleep-trackers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.sleepcycler.com/shift-worker-sleep-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

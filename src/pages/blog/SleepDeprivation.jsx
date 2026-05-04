@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
 import AmazonProductCard from '../../components/AmazonProductCard'
+import MedicalDisclaimer from '../../components/MedicalDisclaimer'
 
 export default function SleepDeprivation() {
   return (
@@ -31,6 +32,8 @@ export default function SleepDeprivation() {
               What One Night of Bad Sleep Actually Does to Your Body and Brain
             </h1>
           </header>
+
+          <MedicalDisclaimer />
 
           {/* Calculator */}
           <section className="mb-10 rounded-2xl bg-sleep-surface border border-sleep-border p-6">

@@ -25,6 +25,7 @@ export default function Footer() {
             <h4 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">Recommended</h4>
             <div className="space-y-2">
               <Link to="/best-mattresses" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">Best Mattresses</Link>
+              <Link to="/best-sleep-trackers" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">Best Sleep Trackers</Link>
             </div>
           </div>
           <div>

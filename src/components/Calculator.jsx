@@ -27,6 +27,37 @@ function loadPref(key, fallback) {
   try { return localStorage.getItem(key) ?? fallback } catch { return fallback }
 }
 
+async function scheduleReminder(targetTime, label) {
+  if (!('Notification' in window)) return false
+  const permission = await Notification.requestPermission()
+  if (permission !== 'granted') return false
+
+  const delayMs = targetTime - Date.now()
+  if (delayMs <= 0) return false
+
+  if ('serviceWorker' in navigator) {
+    const sw = await navigator.serviceWorker.ready
+    sw.active?.postMessage({
+      type: 'SCHEDULE_REMINDER',
+      id: 'bedtime',
+      delayMs,
+      title: 'SleepCycler — Bedtime Reminder',
+      body: `Your target bedtime is now: ${label}. Time to start your wind-down routine.`,
+    })
+  } else {
+    // Fallback: schedule directly in the tab (works only while tab is open)
+    setTimeout(() => {
+      new Notification('SleepCycler — Bedtime Reminder', {
+        body: `Your target bedtime is now: ${label}. Time to start your wind-down routine.`,
+        icon: '/favicon-32.png',
+      })
+    }, delayMs)
+  }
+
+  try { localStorage.setItem('sleepcycler_reminder', JSON.stringify({ ms: targetTime, label })) } catch {}
+  return true
+}
+
 export default function Calculator() {
   const [mode, setMode] = useState(() => loadPref(LS_MODE, 'wake'))
   const [timeValue, setTimeValue] = useState(() => loadPref(LS_TIME, '06:30'))
@@ -34,6 +65,12 @@ export default function Calculator() {
   const [results, setResults] = useState(null)
   const [currentTime, setCurrentTime] = useState(getCurrentTimeString)
   const [sleepNowPulsed, setSleepNowPulsed] = useState(false)
+  const [reminderSet, setReminderSet] = useState(() => {
+    try {
+      const r = JSON.parse(localStorage.getItem('sleepcycler_reminder') ?? 'null')
+      return r && r.ms > Date.now() ? r.label : null
+    } catch { return null }
+  })
 
   // Update displayed current time every 60 seconds
   useEffect(() => {
@@ -183,6 +220,55 @@ export default function Calculator() {
               ? 'Times include 15 minutes to fall asleep. Sleep cycles are approximately 90 minutes each.'
               : 'Wake times include 15 minutes to fall asleep after your bedtime.'}
           </p>
+
+          {/* Bedtime reminder — only visible in bed mode for the recommended result */}
+          {mode === 'wake' && (() => {
+            const rec = results.find(r => r.recommended)
+            if (!rec) return null
+            const now = new Date()
+            const target = new Date()
+            target.setHours(rec.time.hour, rec.time.minute, 0, 0)
+            if (target <= now) target.setDate(target.getDate() + 1)
+            const diffMs = target - now
+            const diffHrs = diffMs / 3600000
+            if (diffHrs > 12 || diffHrs <= 0) return null
+            const label = formatTime(rec.time)
+            return (
+              <div className="mt-4 rounded-xl border border-sleep-accent/20 bg-sleep-accent-dim px-4 py-3">
+                {reminderSet ? (
+                  <p className="text-xs text-sleep-accent">
+                    <span className="font-bold">Reminder set</span> for {reminderSet}.
+                    <button
+                      type="button"
+                      onClick={() => {
+                        try { localStorage.removeItem('sleepcycler_reminder') } catch {}
+                        setReminderSet(null)
+                      }}
+                      className="ml-2 underline opacity-70 hover:opacity-100"
+                    >
+                      Cancel
+                    </button>
+                  </p>
+                ) : (
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="text-xs text-sleep-accent leading-relaxed">
+                      <span className="font-bold">Get a bedtime reminder</span> at {label}?
+                    </p>
+                    <button
+                      type="button"
+                      onClick={async () => {
+                        const ok = await scheduleReminder(target.getTime(), label)
+                        if (ok) setReminderSet(label)
+                      }}
+                      className="flex-shrink-0 px-3 py-1.5 rounded-lg bg-sleep-accent text-sleep-bg text-xs font-bold hover:brightness-110 transition"
+                    >
+                      Remind me
+                    </button>
+                  </div>
+                )}
+              </div>
+            )
+          })()}
 
           {/* Affiliate bridge — only shows after results */}
           <div className="mt-8 rounded-2xl bg-sleep-surface border border-sleep-border p-6">

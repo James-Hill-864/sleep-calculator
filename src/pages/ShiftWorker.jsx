@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../components/Calculator'
 import AmazonProductCard from '../components/AmazonProductCard'
+import MedicalDisclaimer from '../components/MedicalDisclaimer'
 
 export default function ShiftWorker() {
   return (
@@ -35,6 +36,8 @@ export default function ShiftWorker() {
               Standard sleep advice assumes a 10 PM bedtime and a 6 AM alarm. If your shift starts at 5 AM, ends at midnight, or rotates every two weeks, that advice is useless. This calculator works with your actual schedule.
             </p>
           </header>
+
+          <MedicalDisclaimer />
 
           {/* Affiliate disclosure */}
           <div className="rounded-xl bg-sleep-surface border border-sleep-border px-4 py-3 mb-8">

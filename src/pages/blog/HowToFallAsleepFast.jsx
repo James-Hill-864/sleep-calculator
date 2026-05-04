@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Calculator from '../../components/Calculator'
 import AmazonProductCard from '../../components/AmazonProductCard'
+import MedicalDisclaimer from '../../components/MedicalDisclaimer'
 
 export default function HowToFallAsleepFast() {
   return (
@@ -32,6 +33,8 @@ export default function HowToFallAsleepFast() {
               How to Fall Asleep Fast: 9 Methods Backed by Science
             </h1>
           </header>
+
+          <MedicalDisclaimer />
 
           <div className="space-y-8 text-sm sm:text-base text-sleep-muted leading-[1.8]">
 

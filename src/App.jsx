@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 // Eagerly load the home page — it's the entry point and must be instant
 import Home from './pages/Home'
 
+const BestSleepTrackers = lazy(() => import('./pages/BestSleepTrackers'))
+
 // Lazy-load everything else to reduce initial bundle size
 const About = lazy(() => import('./pages/About'))
 const SleepTips = lazy(() => import('./pages/SleepTips'))
@@ -53,6 +55,7 @@ export default function App() {
               <Route path="/best-mattresses" element={<BestMattresses />} />
               <Route path="/shift-worker-sleep-calculator" element={<ShiftWorker />} />
               <Route path="/sleep-debt-calculator" element={<SleepDebt />} />
+              <Route path="/best-sleep-trackers" element={<BestSleepTrackers />} />
               <Route path="/calculators" element={<Calculators />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
