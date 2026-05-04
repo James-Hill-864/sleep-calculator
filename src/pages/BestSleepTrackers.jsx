@@ -1,45 +1,36 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { amazon } from '../utils/amazon'
 
-// Replace each ASIN below with your actual Amazon product ASIN.
-// Find ASINs in your Amazon Associates SiteStripe toolbar or at amazon.com/dp/ASIN
-// Example: amazon('B0CFY1KK7X') → https://www.amazon.com/dp/B0CFY1KK7X?tag=sleepcycler-20
+// TODO: Add a 5th non-wearable tracker (e.g. Withings Sleep Analyzer, under-mattress pad)
+// when you find a good Amazon link. Search "Withings Sleep Analyzer" in Associates dashboard.
 const TRACKERS = [
   {
     name: 'Oura Ring 4',
     price: '$349 – $499',
-    href: amazon('B0CXPJJF3D'), // Replace: Oura Ring 4 Silver Size 8 (verify ASIN at amazon.com)
+    href: 'https://amzn.to/49fA8JV',
     badge: "Editor's Pick",
     why: 'The most accurate consumer sleep tracker available. Oura measures finger pulse oximetry, skin temperature, and HRV simultaneously — a combination that outperforms wrist-based devices in clinical comparisons. Sleep stage detection accuracy approaches 80% vs. PSG gold standard, better than any wrist device. The ring form factor is comfortable enough to wear every night without noticing it. If you want reliable cycle and REM data, this is the one to buy.',
   },
   {
     name: 'Fitbit Charge 6',
     price: '$149 – $179',
-    href: amazon('B0CFY1KK7X'), // Replace: Fitbit Charge 6 Black (verify ASIN at amazon.com)
+    href: 'https://amzn.to/4urQZBh',
     badge: 'Best Value',
     why: 'The best sleep-tracking wristband under $200. Google\'s integration of DeepMind AI into Fitbit\'s Sleep Score algorithm meaningfully improved stage detection accuracy over the Charge 5. Heart rate tracking is continuous at 1-second resolution during sleep, which allows more accurate REM detection than 5-second sampling. The 7-day battery is long enough to track a full week without removing it. Syncs natively with Google Fit and Apple Health.',
   },
   {
     name: 'Garmin Vívosmart 5',
     price: '$149 – $179',
-    href: amazon('B09Y4HQ97G'), // Replace: Garmin Vivosmart 5 (verify ASIN at amazon.com)
+    href: 'https://amzn.to/48IZm3g',
     badge: 'Best for Athletes',
     why: 'Garmin\'s sleep scoring integrates with their Body Battery metric — a composite of HRV, stress, and sleep data that predicts your readiness for exertion. For people who train and want to know whether to push or recover on a given morning, this context makes Garmin\'s sleep data more actionable than a standalone Sleep Score. Particularly good at detecting sleep fragmentation caused by high training load.',
   },
   {
     name: 'Withings ScanWatch 2',
     price: '$299 – $349',
-    href: amazon('B0BHDKBN81'), // Replace: Withings ScanWatch 2 (verify ASIN at amazon.com)
+    href: 'https://amzn.to/4w7DOXZ',
     badge: 'Most Clinical',
     why: 'Withings has FDA-cleared ECG functionality built into a traditional watch design. For sleep tracking specifically, the ScanWatch 2 detects breathing disturbances during sleep — a feature none of the fitness trackers offer. If you suspect sleep apnea (common in people who sleep 8+ hours but still feel tired), the breathing disruption metric gives you a concrete data point to bring to a doctor before spending $3,000 on a sleep study.',
-  },
-  {
-    name: 'Amazon Halo Rise',
-    price: '$59 – $79',
-    href: amazon('B09BDFBN59'), // Replace: Amazon Halo Rise (verify ASIN at amazon.com)
-    badge: 'Non-Wearable',
-    why: 'A bedside device that tracks sleep without wearing anything. Uses a 60GHz radar sensor to detect breathing and movement from up to 3 feet away — no wrist pressure, no ring, no charging mid-week. Accuracy is lower than the Oura Ring but comparable to most wrist devices for total sleep time and broad stage detection. The built-in sunrise alarm wakes you during light sleep, which is the feature that actually changes how you feel in the morning. Best choice if wearables feel uncomfortable or you want to track a partner\'s sleep.',
   },
 ]
 
@@ -86,7 +77,7 @@ export default function BestSleepTrackers() {
         <meta name="twitter:title" content="Best Sleep Trackers (Ranked by Cycle Accuracy)" />
         <meta name="twitter:description" content="5 sleep trackers ranked for sleep cycle accuracy, stage detection, and how actionable the data is." />
         <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Sleep Trackers for Cycle Accuracy","description":"Top sleep trackers ranked for sleep cycle detection accuracy and data actionability.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Oura Ring 4","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":2,"name":"Fitbit Charge 6","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":3,"name":"Garmin Vívosmart 5","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":4,"name":"Withings ScanWatch 2","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":5,"name":"Amazon Halo Rise","url":"https://www.sleepcycler.com/best-sleep-trackers"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Sleep Trackers for Cycle Accuracy","description":"Top sleep trackers ranked for sleep cycle detection accuracy and data actionability.","numberOfItems":4,"itemListElement":[{"@type":"ListItem","position":1,"name":"Oura Ring 4","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":2,"name":"Fitbit Charge 6","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":3,"name":"Garmin Vívosmart 5","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":4,"name":"Withings ScanWatch 2","url":"https://www.sleepcycler.com/best-sleep-trackers"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
