@@ -6,6 +6,7 @@ const TRACKERS = [
     name: 'WHOOP 4.0',
     price: '$239/year (free band)',
     href: 'https://amzn.to/4cLKseY',
+    image: 'https://m.media-amazon.com/images/I/71-Bc3KaY3L._AC_SL1500_.jpg',
     badge: "Editor's Pick",
     why: 'The most health-obsessed sleep tracker on the market. WHOOP skips the watch face entirely — it\'s a screenless band dedicated to recovery data. Its sleep coaching is the best in class: it tracks sleep need (not just sleep duration) by combining HRV, resting heart rate, and activity load from the previous day. The recovery score tells you whether to push hard or take it easy each morning, which makes WHOOP uniquely actionable. Subscription model means the hardware is free; the $239/year covers continuous algorithm updates and unlimited data history.',
   },
@@ -13,6 +14,7 @@ const TRACKERS = [
     name: 'Oura Ring 4',
     price: '$349 – $499',
     href: 'https://amzn.to/49fA8JV',
+    image: 'https://m.media-amazon.com/images/I/51ul5++ZdWL._AC_SL1000_.jpg',
     badge: 'Most Accurate',
     why: 'The most accurate consumer sleep tracker available. Oura measures finger pulse oximetry, skin temperature, and HRV simultaneously — a combination that outperforms wrist-based devices in clinical comparisons. Sleep stage detection accuracy approaches 80% vs. PSG gold standard, better than any wrist device. The ring form factor is comfortable enough to wear every night without noticing it. If you want reliable cycle and REM data, this is the one to buy.',
   },
@@ -20,6 +22,7 @@ const TRACKERS = [
     name: 'Fitbit Charge 6',
     price: '$149 – $179',
     href: 'https://amzn.to/4urQZBh',
+    image: 'https://m.media-amazon.com/images/I/61ZtqtvoD2L._AC_SL1500_.jpg',
     badge: 'Best Value',
     why: 'The best sleep-tracking wristband under $200. Google\'s integration of DeepMind AI into Fitbit\'s Sleep Score algorithm meaningfully improved stage detection accuracy over the Charge 5. Heart rate tracking is continuous at 1-second resolution during sleep, which allows more accurate REM detection than 5-second sampling. The 7-day battery is long enough to track a full week without removing it. Syncs natively with Google Fit and Apple Health.',
   },
@@ -27,6 +30,7 @@ const TRACKERS = [
     name: 'Garmin Vívosmart 5',
     price: '$149 – $179',
     href: 'https://amzn.to/48IZm3g',
+    image: 'https://m.media-amazon.com/images/I/71-iVjaYJIL._AC_SL1500_.jpg',
     badge: 'Best for Athletes',
     why: 'Garmin\'s sleep scoring integrates with their Body Battery metric — a composite of HRV, stress, and sleep data that predicts your readiness for exertion. For people who train and want to know whether to push or recover on a given morning, this context makes Garmin\'s sleep data more actionable than a standalone Sleep Score. Particularly good at detecting sleep fragmentation caused by high training load.',
   },
@@ -34,34 +38,47 @@ const TRACKERS = [
     name: 'Withings ScanWatch 2',
     price: '$299 – $349',
     href: 'https://amzn.to/4w7DOXZ',
+    image: 'https://m.media-amazon.com/images/I/61FooOnl3+L._AC_SL1500_.jpg',
     badge: 'Most Clinical',
     why: 'Withings has FDA-cleared ECG functionality built into a traditional watch design. For sleep tracking specifically, the ScanWatch 2 detects breathing disturbances during sleep — a feature none of the fitness trackers offer. If you suspect sleep apnea (common in people who sleep 8+ hours but still feel tired), the breathing disruption metric gives you a concrete data point to bring to a doctor before spending $3,000 on a sleep study.',
   },
 ]
 
-function TrackerCard({ name, price, href, why, badge }) {
+function TrackerCard({ name, price, href, why, badge, image }) {
   return (
-    <div className="bg-sleep-card border border-sleep-border rounded-2xl p-6 flex flex-col gap-4 hover:border-sleep-faint/20 transition-colors">
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          <h3 className="text-base font-bold text-sleep-text">{name}</h3>
-          <p className="text-xs text-sleep-accent font-mono mt-0.5">{price}</p>
+    <div className="bg-sleep-card border border-sleep-border rounded-2xl overflow-hidden hover:border-sleep-faint/20 transition-colors">
+      {image && (
+        <a href={href} target="_blank" rel="sponsored noopener noreferrer" className="block bg-white">
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-48 object-contain p-4"
+            loading="lazy"
+          />
+        </a>
+      )}
+      <div className="p-6 flex flex-col gap-4">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h3 className="text-base font-bold text-sleep-text">{name}</h3>
+            <p className="text-xs text-sleep-accent font-mono mt-0.5">{price}</p>
+          </div>
+          {badge && (
+            <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-sleep-accent-dim text-sleep-accent border border-sleep-accent/20 whitespace-nowrap">
+              {badge}
+            </span>
+          )}
         </div>
-        {badge && (
-          <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-sleep-accent-dim text-sleep-accent border border-sleep-accent/20 whitespace-nowrap">
-            {badge}
-          </span>
-        )}
+        <p className="text-sm text-sleep-muted leading-relaxed">{why}</p>
+        <a
+          href={href}
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+          className="inline-flex items-center justify-center py-2.5 rounded-xl bg-sleep-accent text-sleep-bg text-xs font-bold hover:brightness-110 transition"
+        >
+          View on Amazon &rarr;
+        </a>
       </div>
-      <p className="text-sm text-sleep-muted leading-relaxed">{why}</p>
-      <a
-        href={href}
-        target="_blank"
-        rel="sponsored noopener noreferrer"
-        className="inline-flex items-center justify-center py-2.5 rounded-xl bg-sleep-accent text-sleep-bg text-xs font-bold hover:brightness-110 transition"
-      >
-        View on Amazon &rarr;
-      </a>
     </div>
   )
 }

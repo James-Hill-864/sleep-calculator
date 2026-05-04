@@ -9,6 +9,7 @@ const MATTRESSES = [
     why: 'Tuft & Needle\'s adaptive foam is denser than standard memory foam, so it holds its shape through the night rather than softening from body heat — meaning your spinal alignment doesn\'t drift after hour three. Graphite and cooling gel are built into the foam itself, so surface temperature stays closer to ambient. Balanced firmness works for back and side sleepers without requiring a firmness choice at purchase.',
     affiliateLink: 'https://amzn.to/4cDFu2I',
     badge: "Editor's Pick",
+    image: 'https://m.media-amazon.com/images/I/71o91CPW49L._AC_SL1500_.jpg',
   },
   {
     name: 'Linenspa 10" Memory Foam Hybrid Mattress',
@@ -16,6 +17,7 @@ const MATTRESSES = [
     why: 'The best entry-price hybrid on Amazon. Innerspring coils give the airflow that all-foam mattresses lack, keeping the sleeping surface cooler through the night. A 2.5" comfort foam layer handles pressure relief well enough for side sleepers. Not a luxury build, but the temperature and motion-isolation fundamentals are sound — rare at this price point.',
     affiliateLink: 'https://amzn.to/4sERDKt',
     badge: 'Best Value',
+    image: 'https://m.media-amazon.com/images/I/71BNCKDmZOL._AC_SL1500_.jpg',
   },
   {
     name: 'Nectar Memory Foam Mattress',
@@ -23,6 +25,7 @@ const MATTRESSES = [
     why: 'A 7-layer memory foam construction that prioritizes deep pressure relief. Side sleepers get the shoulder and hip contouring that reduces the micro-repositioning responsible for most nighttime cycle fragmentation. The quilted cooling cover and gel-infused foam handle heat better than most all-foam builds, though hybrids will still sleep cooler. 365-night trial via Amazon.',
     affiliateLink: 'https://amzn.to/3OBku4n',
     badge: 'Best for Side Sleepers',
+    image: 'https://m.media-amazon.com/images/I/915SO5h8FlL._AC_SL1500_.jpg',
   },
   {
     name: 'GhostBed Classic Mattress',
@@ -30,6 +33,7 @@ const MATTRESSES = [
     why: 'Aerated gel memory foam on top of high-density support foam — the aeration is the key detail. Instead of relying on a cooling cover (which stops working once your body heats it), GhostBed\'s top layer lets heat escape through the foam itself. Result: more consistent surface temperature across the full 7.5–9 hour cycle window. Firmer than Nectar, better for back sleepers and combination sleepers.',
     affiliateLink: 'https://amzn.to/4mJTtsr',
     badge: 'Best Cooling Foam',
+    image: 'https://m.media-amazon.com/images/I/71jzwaJANsL._AC_SL1500_.jpg',
   },
   {
     name: 'Lucid 12" Gel Memory Foam Mattress',
@@ -37,6 +41,7 @@ const MATTRESSES = [
     why: 'Ventilated gel-infused memory foam that genuinely runs cooler than standard foam in the sub-$600 range. The 12" profile adds a 2.5" gel comfort layer on top of a 7.5" support core — thick enough to contour at the shoulders and hips without bottoming out. Widely reviewed, consistently strong scores from hot sleepers who can\'t justify the GhostBed price point. Solid choice if running hot is your primary complaint and budget is the constraint.',
     affiliateLink: 'https://amzn.to/4sERMxv',
     badge: 'Best for Hot Sleepers',
+    image: 'https://m.media-amazon.com/images/I/815ic82dJML._AC_SL1500_.jpg',
   },
 ]
 
