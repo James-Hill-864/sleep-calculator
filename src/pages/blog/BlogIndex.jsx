@@ -69,6 +69,11 @@ const POSTS = [
     description: 'How to take power naps that actually work. The optimal nap length, timing, and technique for maximum alertness benefits.',
   },
   {
+    to: '/blog/how-many-hours-of-sleep-do-you-need',
+    title: 'How Many Hours of Sleep Do You Need for Good Health?',
+    description: 'Adults need 7–9 hours, teens 8–10, seniors 7–8. But the research shows hours matter less than complete cycles. Here\'s what actually determines how rested you feel.',
+  },
+  {
     to: '/blog/what-time-to-go-to-bed-wake-up-8am',
     title: 'What Time Should I Go to Bed If I Wake Up at 8am?',
     description: 'Exact bedtimes for an 8am wake-up using 90-minute sleep cycle math — from the recommended 12:15 AM to the emergency 3:15 AM option.',
