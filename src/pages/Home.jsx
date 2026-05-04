@@ -47,11 +47,6 @@ export default function Home() {
               <Calculator />
             </section>
 
-            {/* Email signup */}
-            <section className="mt-12">
-              <EmailSignup />
-            </section>
-
             {/* Quick explainer */}
             <section className="mt-12">
               <h2 className="text-lg font-bold text-sleep-text mb-4">How does the sleep calculator work?</h2>
@@ -66,6 +61,11 @@ export default function Home() {
                   <Link to="/about" className="text-sleep-accent hover:underline">Learn more about sleep cycles &rarr;</Link>
                 </p>
               </div>
+            </section>
+
+            {/* Email signup */}
+            <section className="mt-12">
+              <EmailSignup />
             </section>
           </div>
 

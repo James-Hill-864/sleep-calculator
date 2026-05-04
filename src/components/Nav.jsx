@@ -7,8 +7,6 @@ const LINKS = [
   { to: '/sleep-tips', label: 'Tips' },
   { to: '/best-mattresses', label: 'Mattresses' },
   { to: '/best-sleep-trackers', label: 'Trackers' },
-  { to: '/shift-worker-sleep-calculator', label: 'Shift Work' },
-  { to: '/sleep-debt-calculator', label: 'Sleep Debt' },
   { to: '/blog', label: 'Blog' },
 ]
 
