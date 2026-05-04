@@ -48,11 +48,11 @@ function TrackerCard({ name, price, href, why, badge, image }) {
   return (
     <div className="bg-sleep-card border border-sleep-border rounded-2xl overflow-hidden hover:border-sleep-faint/20 transition-colors">
       {image && (
-        <a href={href} target="_blank" rel="sponsored noopener noreferrer" className="block bg-white">
+        <a href={href} target="_blank" rel="sponsored noopener noreferrer" className="block bg-gray-50">
           <img
             src={image}
             alt={name}
-            className="w-full h-48 object-contain p-4"
+            className="w-full h-48 object-contain p-6"
             loading="lazy"
           />
         </a>

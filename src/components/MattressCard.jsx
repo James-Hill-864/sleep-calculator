@@ -2,11 +2,11 @@ export default function MattressCard({ name, price, why, affiliateLink, badge, i
   return (
     <div className="bg-sleep-card border border-sleep-border rounded-2xl overflow-hidden hover:border-sleep-faint/20 transition-colors">
       {image && (
-        <a href={affiliateLink} target="_blank" rel="sponsored noopener noreferrer" className="block bg-white">
+        <a href={affiliateLink} target="_blank" rel="sponsored noopener noreferrer" className="block bg-gray-50">
           <img
             src={image}
             alt={name}
-            className="w-full h-48 object-contain p-4"
+            className="w-full h-48 object-contain p-6"
             loading="lazy"
           />
         </a>
