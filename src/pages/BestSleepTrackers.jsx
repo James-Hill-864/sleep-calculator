@@ -1,14 +1,19 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 
-// TODO: Add a 5th non-wearable tracker (e.g. Withings Sleep Analyzer, under-mattress pad)
-// when you find a good Amazon link. Search "Withings Sleep Analyzer" in Associates dashboard.
 const TRACKERS = [
+  {
+    name: 'WHOOP 4.0',
+    price: '$239/year (free band)',
+    href: 'https://amzn.to/4cLKseY',
+    badge: "Editor's Pick",
+    why: 'The most health-obsessed sleep tracker on the market. WHOOP skips the watch face entirely — it\'s a screenless band dedicated to recovery data. Its sleep coaching is the best in class: it tracks sleep need (not just sleep duration) by combining HRV, resting heart rate, and activity load from the previous day. The recovery score tells you whether to push hard or take it easy each morning, which makes WHOOP uniquely actionable. Subscription model means the hardware is free; the $239/year covers continuous algorithm updates and unlimited data history.',
+  },
   {
     name: 'Oura Ring 4',
     price: '$349 – $499',
     href: 'https://amzn.to/49fA8JV',
-    badge: "Editor's Pick",
+    badge: 'Most Accurate',
     why: 'The most accurate consumer sleep tracker available. Oura measures finger pulse oximetry, skin temperature, and HRV simultaneously — a combination that outperforms wrist-based devices in clinical comparisons. Sleep stage detection accuracy approaches 80% vs. PSG gold standard, better than any wrist device. The ring form factor is comfortable enough to wear every night without noticing it. If you want reliable cycle and REM data, this is the one to buy.',
   },
   {
@@ -77,7 +82,7 @@ export default function BestSleepTrackers() {
         <meta name="twitter:title" content="Best Sleep Trackers (Ranked by Cycle Accuracy)" />
         <meta name="twitter:description" content="5 sleep trackers ranked for sleep cycle accuracy, stage detection, and how actionable the data is." />
         <meta name="twitter:image" content="https://www.sleepcycler.com/og-image.jpg" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Sleep Trackers for Cycle Accuracy","description":"Top sleep trackers ranked for sleep cycle detection accuracy and data actionability.","numberOfItems":4,"itemListElement":[{"@type":"ListItem","position":1,"name":"Oura Ring 4","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":2,"name":"Fitbit Charge 6","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":3,"name":"Garmin Vívosmart 5","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":4,"name":"Withings ScanWatch 2","url":"https://www.sleepcycler.com/best-sleep-trackers"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Best Sleep Trackers for Cycle Accuracy","description":"Top sleep trackers ranked for sleep cycle detection accuracy and data actionability.","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"WHOOP 4.0","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":2,"name":"Oura Ring 4","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":3,"name":"Fitbit Charge 6","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":4,"name":"Garmin Vívosmart 5","url":"https://www.sleepcycler.com/best-sleep-trackers"},{"@type":"ListItem","position":5,"name":"Withings ScanWatch 2","url":"https://www.sleepcycler.com/best-sleep-trackers"}]})}</script>
       </Helmet>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
