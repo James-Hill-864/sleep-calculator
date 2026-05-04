@@ -6,10 +6,12 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h4 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">Tool</h4>
+            <h4 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">Tools</h4>
             <div className="space-y-2">
+              <Link to="/calculators" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">All Calculators</Link>
               <Link to="/" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">Sleep Calculator</Link>
-              <Link to="/shift-worker-sleep-calculator" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">Shift Worker Calculator</Link>
+              <Link to="/sleep-debt-calculator" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">Sleep Debt</Link>
+              <Link to="/shift-worker-sleep-calculator" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">Shift Worker</Link>
             </div>
           </div>
           <div>
@@ -26,9 +28,10 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">About</h4>
+            <h4 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">Legal</h4>
             <div className="space-y-2">
-              <span className="block text-sm text-sleep-faint">Built for better sleep.</span>
+              <Link to="/privacy" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="block text-sm text-sleep-muted hover:text-sleep-text transition-colors">Terms of Use</Link>
             </div>
           </div>
         </div>

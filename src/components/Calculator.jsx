@@ -19,12 +19,19 @@ function getCurrentTimeString() {
   return `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`
 }
 
+const LS_MODE = 'sleepcycler_mode'
+const LS_TIME = 'sleepcycler_time'
+const LS_AGE = 'sleepcycler_age'
+
+function loadPref(key, fallback) {
+  try { return localStorage.getItem(key) ?? fallback } catch { return fallback }
+}
+
 export default function Calculator() {
-  const [mode, setMode] = useState('wake')
-  const [timeValue, setTimeValue] = useState('06:30')
-  const [ageGroup, setAgeGroup] = useState('adult')
+  const [mode, setMode] = useState(() => loadPref(LS_MODE, 'wake'))
+  const [timeValue, setTimeValue] = useState(() => loadPref(LS_TIME, '06:30'))
+  const [ageGroup, setAgeGroup] = useState(() => loadPref(LS_AGE, 'adult'))
   const [results, setResults] = useState(null)
-  const [isCalculating, setIsCalculating] = useState(false)
   const [currentTime, setCurrentTime] = useState(getCurrentTimeString)
   const [sleepNowPulsed, setSleepNowPulsed] = useState(false)
 
@@ -34,18 +41,19 @@ export default function Calculator() {
     return () => clearInterval(iv)
   }, [])
 
+  // Persist preferences
+  useEffect(() => { try { localStorage.setItem(LS_MODE, mode) } catch {} }, [mode])
+  useEffect(() => { try { localStorage.setItem(LS_TIME, timeValue) } catch {} }, [timeValue])
+  useEffect(() => { try { localStorage.setItem(LS_AGE, ageGroup) } catch {} }, [ageGroup])
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    setIsCalculating(true)
-    setTimeout(() => {
-      const { hour, minute } = parseTimeInput(timeValue)
-      if (mode === 'wake') {
-        setResults(calculateBedtimes(hour, minute, ageGroup))
-      } else {
-        setResults(calculateWakeTimes(hour, minute, ageGroup))
-      }
-      setIsCalculating(false)
-    }, 300)
+    const { hour, minute } = parseTimeInput(timeValue)
+    if (mode === 'wake') {
+      setResults(calculateBedtimes(hour, minute, ageGroup))
+    } else {
+      setResults(calculateWakeTimes(hour, minute, ageGroup))
+    }
   }
 
   const handleSleepNow = () => {
@@ -74,6 +82,8 @@ export default function Calculator() {
             <button
               key={m.id}
               type="button"
+              aria-label={m.label}
+              aria-pressed={mode === m.id}
               onClick={() => { setMode(m.id); setResults(null) }}
               className={`flex-1 py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all ${
                 mode === m.id
@@ -131,6 +141,8 @@ export default function Calculator() {
               <button
                 key={ag.id}
                 type="button"
+                aria-label={`${ag.label} (${ag.sub})`}
+                aria-pressed={ageGroup === ag.id}
                 onClick={() => setAgeGroup(ag.id)}
                 className={`py-2.5 rounded-xl text-center transition-all ${
                   ageGroup === ag.id
@@ -148,20 +160,16 @@ export default function Calculator() {
         {/* Submit */}
         <button
           type="submit"
-          disabled={isCalculating}
-          className={`w-full py-3.5 rounded-xl text-sm font-bold tracking-wide transition-all ${
-            isCalculating
-              ? 'bg-sleep-accent/50 text-sleep-bg/70 cursor-not-allowed'
-              : 'bg-sleep-accent text-sleep-bg hover:bg-sleep-accent/90 active:scale-[0.99]'
-          }`}
+          className="w-full py-3.5 rounded-xl text-sm font-bold tracking-wide transition-all bg-sleep-accent text-sleep-bg hover:bg-sleep-accent/90 active:scale-[0.99]"
         >
-          {isCalculating ? 'Calculating...' : 'Calculate'}
+          Calculate
         </button>
       </form>
 
-      {/* Results */}
-      {results && (
-        <div className="mt-8">
+      {/* Results — min-height prevents CLS when results appear */}
+      <div className="mt-8 min-h-0" role="alert" aria-live="polite" aria-atomic="true">
+        {results && (
+        <div>
           <h2 className="text-[10px] font-bold text-sleep-faint uppercase tracking-widest mb-4">
             {mode === 'wake' ? 'Go to sleep at...' : 'Set your alarm for...'}
           </h2>
@@ -190,7 +198,8 @@ export default function Calculator() {
             </Link>
           </div>
         </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }

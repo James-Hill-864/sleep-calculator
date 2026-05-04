@@ -92,6 +92,13 @@ export default function SleepDebt() {
           </p>
         </header>
 
+        {/* Affiliate disclosure */}
+        <div className="rounded-xl bg-sleep-surface border border-sleep-border px-4 py-3 mb-6">
+          <p className="text-xs text-sleep-faint leading-relaxed">
+            <strong className="text-sleep-muted">Affiliate disclosure:</strong> This page contains affiliate links. We may earn a commission at no extra cost to you. We only recommend products we believe support sleep debt recovery.
+          </p>
+        </div>
+
         {/* Calculator Form */}
         <section className="space-y-6 mb-4">
           {/* Age group */}

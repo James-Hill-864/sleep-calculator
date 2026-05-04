@@ -11,6 +11,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.sleepcycler.com/calculators</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.sleepcycler.com/sleep-tips</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -82,6 +87,36 @@
   </url>
   <url>
     <loc>https://www.sleepcycler.com/blog/why-do-i-wake-up-at-3am-every-night</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepcycler.com/blog/sleep-tracking-what-data-means</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepcycler.com/blog/sleep-environment-optimization</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepcycler.com/blog/power-naps-science-short-sleep</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-8am</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-9am</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.sleepcycler.com/blog/what-time-to-go-to-bed-wake-up-10am</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

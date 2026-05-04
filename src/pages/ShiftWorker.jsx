@@ -7,8 +7,8 @@ export default function ShiftWorker() {
   return (
     <>
       <Helmet>
-        <title>Sleep Calculator for Shift Workers — SleepCycler</title>
-        <meta name="description" content="Sleep calculator for shift workers, nurses, and early risers. Find the best bedtime for 4 AM, 5 AM, or any non-standard wake-up." />
+        <title>Sleep Calculator for Shift Workers &amp; Non-Standard Schedules — SleepCycler</title>
+        <meta name="description" content="Sleep calculator for shift workers, nurses, and rotating schedules. Find the best bedtime for any non-standard wake-up time. Science-backed cycle alignment." />
         <link rel="canonical" href="https://www.sleepcycler.com/shift-worker-sleep-calculator" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Sleep Calculator for Shift Workers" />
@@ -35,6 +35,13 @@ export default function ShiftWorker() {
               Standard sleep advice assumes a 10 PM bedtime and a 6 AM alarm. If your shift starts at 5 AM, ends at midnight, or rotates every two weeks, that advice is useless. This calculator works with your actual schedule.
             </p>
           </header>
+
+          {/* Affiliate disclosure */}
+          <div className="rounded-xl bg-sleep-surface border border-sleep-border px-4 py-3 mb-8">
+            <p className="text-xs text-sleep-faint leading-relaxed">
+              <strong className="text-sleep-muted">Affiliate disclosure:</strong> This page contains affiliate links. We may earn a commission at no extra cost to you. We only recommend products we believe materially improve sleep quality for shift workers.
+            </p>
+          </div>
 
           {/* Calculator at the top */}
           <section className="mb-12">

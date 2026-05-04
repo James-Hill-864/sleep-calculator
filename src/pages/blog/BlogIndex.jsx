@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import EmailSignup from '../../components/EmailSignup'
 
 const POSTS = [
   {
@@ -52,6 +53,36 @@ const POSTS = [
     title: 'Why Do I Wake Up at 3am Every Night?',
     description: 'The seven most common causes of middle-of-the-night waking, in order of likelihood — plus the 2-week fix protocol.',
   },
+  {
+    to: '/blog/sleep-tracking-what-data-means',
+    title: 'Sleep Tracking: What Your Sleep Data Really Means',
+    description: 'What sleep trackers actually measure, what the numbers mean, and how to use sleep data without becoming obsessed.',
+  },
+  {
+    to: '/blog/sleep-environment-optimization',
+    title: 'Sleep Environment: How Your Bedroom Affects Sleep Quality',
+    description: 'The science of sleep environment optimization. Temperature, light, noise, and air quality changes that improve sleep.',
+  },
+  {
+    to: '/blog/power-naps-science-short-sleep',
+    title: 'Power Naps: The Science of Short Sleep',
+    description: 'How to take power naps that actually work. The optimal nap length, timing, and technique for maximum alertness benefits.',
+  },
+  {
+    to: '/blog/what-time-to-go-to-bed-wake-up-8am',
+    title: 'What Time Should I Go to Bed If I Wake Up at 8am?',
+    description: 'Exact bedtimes for an 8am wake-up using 90-minute sleep cycle math — from the recommended 12:15 AM to the emergency 3:15 AM option.',
+  },
+  {
+    to: '/blog/what-time-to-go-to-bed-wake-up-9am',
+    title: 'What Time Should I Go to Bed If I Wake Up at 9am?',
+    description: 'Optimal bedtimes for a 9am alarm — why 1:15 AM is the recommended target and how social jet lag affects later risers.',
+  },
+  {
+    to: '/blog/what-time-to-go-to-bed-wake-up-10am',
+    title: 'What Time Should I Go to Bed If I Wake Up at 10am?',
+    description: 'Cycle-aligned bedtimes for 10am risers — night owls, remote workers, and weekend schedules explained.',
+  },
 ]
 
 export default function BlogIndex() {
@@ -85,6 +116,13 @@ export default function BlogIndex() {
         <p className="text-sm text-sleep-muted mb-6">
           Need a quick answer? Use the <Link to="/" className="text-sleep-accent hover:underline">sleep calculator</Link> to find your ideal bedtime or wake time right now. Prefer a reader? <a href="/rss.xml" className="text-sleep-accent hover:underline">Subscribe via RSS</a>.
         </p>
+
+        <div className="mb-8">
+          <EmailSignup
+            heading="Get the sleep science newsletter"
+            subhead="One evidence-based email per week on sleep cycles, circadian rhythm, and waking up rested."
+          />
+        </div>
 
         <div className="space-y-4">
           {POSTS.map(post => (
