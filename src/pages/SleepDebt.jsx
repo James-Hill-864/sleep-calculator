@@ -65,12 +65,12 @@ export default function SleepDebt() {
   return (
     <>
       <Helmet>
-        <title>Sleep Debt Calculator — How Much Sleep Do You Owe Your Body? — SleepCycler</title>
-        <meta name="description" content="Calculate your sleep debt from the last 7 nights and get a recovery plan with cycle-aligned bedtimes." />
+        <title>Sleep Debt Calculator | SleepCycler</title>
+        <meta name="description" content="Find out exactly how much sleep you owe your body. Enter last week's sleep hours, see your deficit in minutes, and get a personalized recovery plan. Free." />
         <link rel="canonical" href="https://www.sleepcycler.com/sleep-debt-calculator" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Sleep Debt Calculator — How Much Sleep Do You Owe Your Body?" />
-        <meta property="og:description" content="Calculate your sleep debt from the last 7 nights and get a recovery plan with cycle-aligned bedtimes." />
+        <meta property="og:title" content="Sleep Debt Calculator | SleepCycler" />
+        <meta property="og:description" content="Find out exactly how much sleep you owe your body. Enter last week's sleep hours, see your deficit in minutes, and get a personalized recovery plan. Free." />
         <meta property="og:url" content="https://www.sleepcycler.com/sleep-debt-calculator" />
         <meta property="og:image" content="https://www.sleepcycler.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
