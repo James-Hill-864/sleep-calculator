@@ -63,6 +63,32 @@ export default function Home() {
               </div>
             </section>
 
+            {/* Popular wake times — internal links to /wake-up/ pages */}
+            <section className="mt-12">
+              <h2 className="text-lg font-bold text-sleep-text mb-1">Bedtime calculator by wake-up time</h2>
+              <p className="text-sm text-sleep-muted mb-4">Pick your wake time for a dedicated bedtime guide.</p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                {[
+                  { slug: '05-00am', label: '5:00 AM' },
+                  { slug: '06-00am', label: '6:00 AM' },
+                  { slug: '06-30am', label: '6:30 AM' },
+                  { slug: '07-00am', label: '7:00 AM' },
+                  { slug: '07-30am', label: '7:30 AM' },
+                  { slug: '08-00am', label: '8:00 AM' },
+                  { slug: '09-00am', label: '9:00 AM' },
+                  { slug: '10-00am', label: '10:00 AM' },
+                ].map(t => (
+                  <Link
+                    key={t.slug}
+                    to={`/wake-up/${t.slug}`}
+                    className="rounded-xl bg-sleep-card border border-sleep-border px-4 py-3 text-sm text-sleep-accent hover:border-sleep-accent/30 transition-colors text-center"
+                  >
+                    {t.label}
+                  </Link>
+                ))}
+              </div>
+            </section>
+
             {/* Email signup */}
             <section className="mt-12">
               <EmailSignup />
@@ -71,6 +97,14 @@ export default function Home() {
 
           {/* Sidebar */}
           <aside className="hidden lg:flex flex-col gap-6">
+            <div className="rounded-2xl bg-sleep-card border border-sleep-border p-5">
+              <h3 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">Tools</h3>
+              <div className="space-y-2">
+                <Link to="/sleep-cycle-timer" className="block text-sm text-sleep-accent hover:underline">Sleep cycle timer &rarr;</Link>
+                <Link to="/sleep-debt-calculator" className="block text-sm text-sleep-accent hover:underline">Sleep debt calculator &rarr;</Link>
+                <Link to="/shift-worker-sleep-calculator" className="block text-sm text-sleep-accent hover:underline">Shift worker calculator &rarr;</Link>
+              </div>
+            </div>
             <div className="rounded-2xl bg-sleep-card border border-sleep-border p-5">
               <h3 className="text-xs font-bold text-sleep-faint uppercase tracking-widest mb-3">Explore</h3>
               <div className="space-y-2">
