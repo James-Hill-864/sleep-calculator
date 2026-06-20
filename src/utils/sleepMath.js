@@ -166,3 +166,16 @@ export function parseWakeUpSlug(slug) {
 export const WAKE_UP_SLUGS = Array.from({ length: 48 }, (_, i) =>
   toWakeUpSlug(Math.floor(i / 2), (i % 2) * 30)
 );
+
+/** Common bedtime slugs (8 PM to 4 AM) for /bedtime/[slug] pages. */
+export const BEDTIME_SLUGS = [
+  toWakeUpSlug(20, 0), toWakeUpSlug(20, 30),
+  toWakeUpSlug(21, 0), toWakeUpSlug(21, 30),
+  toWakeUpSlug(22, 0), toWakeUpSlug(22, 30),
+  toWakeUpSlug(23, 0), toWakeUpSlug(23, 30),
+  toWakeUpSlug(0, 0),  toWakeUpSlug(0, 30),
+  toWakeUpSlug(1, 0),  toWakeUpSlug(1, 30),
+  toWakeUpSlug(2, 0),  toWakeUpSlug(2, 30),
+  toWakeUpSlug(3, 0),  toWakeUpSlug(3, 30),
+  toWakeUpSlug(4, 0),
+];

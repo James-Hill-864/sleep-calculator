@@ -38,6 +38,8 @@ const PowerNaps = lazy(() => import('./pages/blog/PowerNaps'))
 const HowManyHoursSleep = lazy(() => import('./pages/blog/HowManyHoursSleep'))
 const SleepCycleTimer = lazy(() => import('./pages/SleepCycleTimer'))
 const WakeUpLanding = lazy(() => import('./pages/WakeUpLanding'))
+const BedtimeLanding = lazy(() => import('./pages/BedtimeLanding'))
+const SleepHoursCalculator = lazy(() => import('./pages/SleepHoursCalculator'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function PageFallback() {
@@ -81,7 +83,9 @@ export default function App() {
               <Route path="/blog/power-naps-science-short-sleep" element={<PowerNaps />} />
               <Route path="/blog/how-many-hours-of-sleep-do-you-need" element={<HowManyHoursSleep />} />
               <Route path="/sleep-cycle-timer" element={<SleepCycleTimer />} />
+              <Route path="/sleep-hours-calculator" element={<SleepHoursCalculator />} />
               <Route path="/wake-up/:timeSlug" element={<WakeUpLanding />} />
+              <Route path="/bedtime/:timeSlug" element={<BedtimeLanding />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

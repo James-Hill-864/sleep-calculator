@@ -58,9 +58,9 @@ async function scheduleReminder(targetTime, label) {
   return true
 }
 
-export default function Calculator({ defaultWakeTime = null }) {
-  const [mode, setMode] = useState(() => defaultWakeTime ? 'wake' : loadPref(LS_MODE, 'wake'))
-  const [timeValue, setTimeValue] = useState(() => defaultWakeTime ?? loadPref(LS_TIME, '06:30'))
+export default function Calculator({ defaultWakeTime = null, defaultBedTime = null }) {
+  const [mode, setMode] = useState(() => defaultWakeTime ? 'wake' : defaultBedTime ? 'bed' : loadPref(LS_MODE, 'wake'))
+  const [timeValue, setTimeValue] = useState(() => defaultWakeTime ?? defaultBedTime ?? loadPref(LS_TIME, '06:30'))
   const [ageGroup, setAgeGroup] = useState(() => loadPref(LS_AGE, 'adult'))
   const [results, setResults] = useState(null)
   const [currentTime, setCurrentTime] = useState(getCurrentTimeString)
@@ -72,14 +72,17 @@ export default function Calculator({ defaultWakeTime = null }) {
     } catch { return null }
   })
 
-  // Auto-calculate when a default wake time is provided (landing pages)
+  // Auto-calculate when a default time is provided (landing pages)
   useEffect(() => {
     if (defaultWakeTime) {
       const { hour, minute } = parseTimeInput(defaultWakeTime)
       setResults(calculateBedtimes(hour, minute, ageGroup))
+    } else if (defaultBedTime) {
+      const { hour, minute } = parseTimeInput(defaultBedTime)
+      setResults(calculateWakeTimes(hour, minute, ageGroup))
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [defaultWakeTime])
+  }, [defaultWakeTime, defaultBedTime])
 
   // Update displayed current time every 60 seconds
   useEffect(() => {
