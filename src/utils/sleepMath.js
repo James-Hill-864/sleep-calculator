@@ -129,3 +129,40 @@ export function parseTimeInput(timeString) {
   const [h, m] = timeString.split(':').map(Number);
   return { hour: h, minute: m };
 }
+
+/**
+ * Convert a 24-hour wake time to the /wake-up/ URL slug format.
+ * (6, 30) → "06-30am", (0, 0) → "12-00am", (13, 30) → "01-30pm"
+ */
+export function toWakeUpSlug(hour24, minute) {
+  const period = hour24 >= 12 ? 'pm' : 'am';
+  const hour12 = hour24 === 0 ? 12 : hour24 > 12 ? hour24 - 12 : hour24;
+  return `${String(hour12).padStart(2, '0')}-${String(minute).padStart(2, '0')}${period}`;
+}
+
+/**
+ * Parse a /wake-up/ slug back to 24-hour {hour, minute}.
+ * "06-30am" → {hour: 6, minute: 30}, "12-00am" → {hour: 0, minute: 0}
+ * Returns null for invalid slugs.
+ */
+export function parseWakeUpSlug(slug) {
+  const match = slug?.match(/^(\d{2})-(\d{2})(am|pm)$/);
+  if (!match) return null;
+  const hour12 = parseInt(match[1], 10);
+  const minute = parseInt(match[2], 10);
+  const period = match[3];
+
+  if (hour12 < 1 || hour12 > 12) return null;
+  if (minute !== 0 && minute !== 30) return null;
+
+  const hour24 = period === 'am'
+    ? (hour12 === 12 ? 0 : hour12)
+    : (hour12 === 12 ? 12 : hour12 + 12);
+
+  return { hour: hour24, minute };
+}
+
+/** All 48 valid wake-up slugs in order from midnight through 11:30 PM. */
+export const WAKE_UP_SLUGS = Array.from({ length: 48 }, (_, i) =>
+  toWakeUpSlug(Math.floor(i / 2), (i % 2) * 30)
+);

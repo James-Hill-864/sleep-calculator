@@ -36,6 +36,7 @@ const SleepTracking = lazy(() => import('./pages/blog/SleepTracking'))
 const SleepEnvironment = lazy(() => import('./pages/blog/SleepEnvironment'))
 const PowerNaps = lazy(() => import('./pages/blog/PowerNaps'))
 const HowManyHoursSleep = lazy(() => import('./pages/blog/HowManyHoursSleep'))
+const WakeUpLanding = lazy(() => import('./pages/WakeUpLanding'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function PageFallback() {
@@ -78,6 +79,7 @@ export default function App() {
               <Route path="/blog/sleep-environment-optimization" element={<SleepEnvironment />} />
               <Route path="/blog/power-naps-science-short-sleep" element={<PowerNaps />} />
               <Route path="/blog/how-many-hours-of-sleep-do-you-need" element={<HowManyHoursSleep />} />
+              <Route path="/wake-up/:timeSlug" element={<WakeUpLanding />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
